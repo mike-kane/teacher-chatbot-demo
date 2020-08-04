@@ -30,7 +30,6 @@
  - what information do you have
  - what info can you give me
  
- 
 ## intent:inquire_due
 - what assignments are due soon
 - are there any outstanding assignments
@@ -46,7 +45,7 @@
 - due date for hw
 - am i missing anything
 
-## intent:inquire_outstanding_assignments
+## intent:inquire_assignments
 - am i missing any assignments
 - do i have any zeros
 - what work am i missing
@@ -99,6 +98,9 @@
 - tell me about the project
 
 ## intent:inquire_class_policies
+
+
+## intent: inquire_grades
 
 
 ## intent:goodbye
