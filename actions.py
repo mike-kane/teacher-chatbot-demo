@@ -27,10 +27,10 @@ class ActionGetDueDates(Action):
         return []
 
 
-class ActionCalculateGrade(Action):
+class ActionGetGrades(Action):
 
     def name(self) -> Text:
-        return "action_calculate_grade"
+        return "action_get_grades"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -41,15 +41,29 @@ class ActionCalculateGrade(Action):
         return []
 
 
-class ActionHomeworkDetails(Action):
+class ActionGetHomeworkDetails(Action):
 
     def name(self) -> Text:
-        return "action_hw_details"
+        return "action_get_hw_details"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # TODO: Add hw details response (happy path)
+        dispatcher.utter_message(text="Hello World!")
+
+        return []
+
+
+class ActionGetOutstandingAssignments(Action):
+
+    def name(self) -> Text:
+        return "action_get_outstanding_assignments"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # TODO: complete show assignments (Happy Path)
         dispatcher.utter_message(text="Hello World!")
 
         return []
@@ -64,33 +78,6 @@ class ActionDescribePolicy(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # TODO: complete describe policy function
-        dispatcher.utter_message(text="Hello World!")
-
-        return []
-
-class ActionShowAssignments(Action):
-
-    def name(self) -> Text:
-        return "action_show_assignments"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # TODO: complete show assignments (Happy Path)
-        dispatcher.utter_message(text="Hello World!")
-
-        return []
-
-
-class ActionGetAssignmentGrades(Action):
-
-    def name(self) -> Text:
-        return "action_get_assignment_grades"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # TODO: complete action get assignment grades
         dispatcher.utter_message(text="Hello World!")
 
         return []
