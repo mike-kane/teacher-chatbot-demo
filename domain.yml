@@ -7,7 +7,7 @@ intents:
   - inquire_grades
   - inquire_homework
   - inquire_project
-  - inquire_class_policy
+  - inquire_class_policies
   - inquire_assignments_functionality
   - inquire_grades_functionality
   - inquire_class_policies_functionality
