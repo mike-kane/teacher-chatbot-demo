@@ -11,6 +11,7 @@ intents:
   - inquire_assignments_functionality
   - inquire_grades_functionality
   - inquire_class_policies_functionality
+  - goodbye
 
 actions:
   - action_get_due_dates
@@ -24,6 +25,9 @@ responses:
   utter_greet:
   - text: "Hi!"
   - text: "Welcome to our demo!"
+
+  utter_goodbye:
+  - text: "Goodbye!"
 
   utter_explain_bot:
   - text: ""
