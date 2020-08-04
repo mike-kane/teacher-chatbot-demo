@@ -3,21 +3,18 @@ intents:
   - bot_challenge
   - inquire_functionality
   - inquire_due
-  - inquire_outstanding_assignments
+  - inquire_assignments
   - inquire_grades
   - inquire_homework
   - inquire_project
   - inquire_class_policies
-  - inquire_assignments_functionality
-  - inquire_grades_functionality
-  - inquire_class_policies_functionality
   - goodbye
 
 actions:
   - action_get_due_dates
   - action_get_grades
   - action_get_hw_details
-  - action_get_outstanding_assignments
+  - action_get_assignments
   - action_describe_policy
 
 
@@ -30,28 +27,36 @@ responses:
   - text: "Goodbye!"
 
   utter_explain_bot:
-  - text: ""
+  - text: "I'm a chatbot, not a person. I'm here to act as your AI-powered virtual assistant. Think of me as your robot secretary."
 
   utter_explain_functionality:
-  - text: ""
+  - text: "**NOTE: DEMO MODE--SOME FUNCTIONALITY IS HAPPY PATHED** \n \n I'm a meticulous note taker, and I've got all the information you need.  Here are some of the ways I can make your lif easier:
+  \n
+  **--Deadlines and Due Dates--**
+  * All the important dates, and deadlines? I can tell you those.
 
-  utter_explain_assignments_functionality:
-  - text: ""
+  \n
+  **--Assignments and Projects--**
+  * Want to know what the homework is? I can tell you that.
+  * Got questions about a project? I can answer those, too.
+  * Missing any work? I can point you in the right direction.
+  \n
+  **--Grades--**
+  *  I can tell you your grades on assignments, or grades in the class
 
-  utter_explain_grades_functionality:
-  - text: ""
-
-  utter_explain_class_policies_functionality:
-  - text: ""
+  **--Policies & Syllabus--**
+  * I can tell you about class policies other information you'd find in the syllabus
+  * I can tell you contact info for the teacher and the school
+  "
 
   utter_hw:
-  - text: ""
+  - text: "I can tell you the homework. One sec, check..."
 
   utter_project_details:
-  - text: ""
+  - text: "((PROJECT DETAILS PLACEHOLDER))"
 
-  utter_assignment_or_overall:
-  - text: ""
+  utter_policy_choices:
+  - text: "((POLICY CHOICES PLACEHOLDER))"
 
 
 session_config:
