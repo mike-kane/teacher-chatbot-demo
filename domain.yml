@@ -1,31 +1,54 @@
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
+  - inquire_functionality
+  - inquire_due
+  - inquire_outstanding_assignments
+  - inquire_grades
+  - inquire_homework
+  - inquire_project
+  - inquire_class_policy
+  - inquire_assignments_functionality
+  - inquire_grades_functionality
+  - inquire_class_policies_functionality
+
+actions:
+  - action_get_due_dates
+  - action_get_grades
+  - action_get_hw_details
+  - action_get_outstanding_assignments
+  - action_describe_policy
+
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi!"
+  - text: "Welcome to our demo!"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_explain_bot:
+  - text: ""
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_explain_functionality:
+  - text: ""
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_explain_assignments_functionality:
+  - text: ""
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_explain_grades_functionality:
+  - text: ""
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_explain_class_policies_functionality:
+  - text: ""
+
+  utter_hw:
+  - text: ""
+
+  utter_project_details:
+  - text: ""
+
+  utter_assignment_or_overall:
+  - text: ""
+
 
 session_config:
   session_expiration_time: 60
