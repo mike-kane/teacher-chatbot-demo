@@ -17,6 +17,18 @@ actions:
   - action_get_assignments
   - action_describe_policy
 
+slots:
+  policy_coice:
+    type: categorical
+    values:
+      - grading
+      - contact info
+      - project
+      - course description
+      - learning objectives
+      - required materials
+      - absentee
+
 
 responses:
   utter_greet:
