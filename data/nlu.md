@@ -19,17 +19,17 @@
 - am i talking to a person
 
 ## intent:inquire_functionality
- - what are you capable of?
- - what can you tell me?
- - what can you do?
- - explain yourself
- - what are some examples of things you can tell me?
- - what kind of things can you help me with
- - what sort of things can you tell me
- - so what are you capable of
- - what information do you have
- - what info can you give me
- 
+- what are you capable of?
+- what can you tell me?
+- what can you do?
+- explain yourself
+- what are some examples of things you can tell me?
+- what kind of things can you help me with
+- what sort of things can you tell me
+- so what are you capable of
+- what information do you have
+- what info can you give me
+
 ## intent:inquire_due
 - what assignments are due soon
 - are there any outstanding assignments
@@ -78,6 +78,16 @@
 - project scores
 - project grade
 - what is my class avg
+- what is my grade in the class
+- how did I do on the test
+- show me my recent grades
+- how am i doing in class right now
+- tell me my grades
+- I have a question about grades
+- grades
+- scores
+- grade point average
+- am I passing this class
 
 ## intent:inquire_homework
 - did we have any homework
@@ -88,6 +98,7 @@
 - what am I supposed to read tonight
 - Did she give us hw
 - did he give us hw
+- Does tonight's hw have to do with the project
 
 ## intent:inquire_project
 - tell me about the class project
@@ -98,10 +109,12 @@
 - tell me about the project
 
 ## intent:inquire_class_policies
-
-
-## intent: inquire_grades
-
+- I have a question about the syllabus
+- what is the absence policy
+- show me the syllabus
+- class rules
+- class policies
+- I have questions about the class
 
 ## intent:goodbye
 - bye

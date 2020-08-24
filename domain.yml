@@ -1,76 +1,60 @@
-intents:
-  - greet
-  - bot_challenge
-  - inquire_functionality
-  - inquire_due
-  - inquire_assignments
-  - inquire_grades
-  - inquire_homework
-  - inquire_project
-  - inquire_class_policies
-  - goodbye
-
-actions:
-  - action_get_due_dates
-  - action_get_grades
-  - action_get_hw_details
-  - action_get_assignments
-  - action_describe_policy
-
-slots:
-  policy_coice:
-    type: categorical
-    values:
-      - grading
-      - contact info
-      - project
-      - course description
-      - learning objectives
-      - required materials
-      - absentee
-
-
-responses:
-  utter_greet:
-  - text: "Hi!"
-  - text: "Welcome to our demo!"
-
-  utter_goodbye:
-  - text: "Goodbye!"
-
-  utter_explain_bot:
-  - text: "I'm a chatbot, not a person. I'm here to act as your AI-powered virtual assistant. Think of me as your robot secretary."
-
-  utter_explain_functionality:
-  - text: "**NOTE: DEMO MODE--SOME FUNCTIONALITY IS HAPPY PATHED** \n \n I'm a meticulous note taker, and I've got all the information you need.  Here are some of the ways I can make your lif easier:
-  \n
-  **--Deadlines and Due Dates--**
-  * All the important dates, and deadlines? I can tell you those.
-
-  \n
-  **--Assignments and Projects--**
-  * Want to know what the homework is? I can tell you that.
-  * Got questions about a project? I can answer those, too.
-  * Missing any work? I can point you in the right direction.
-  \n
-  **--Grades--**
-  *  I can tell you your grades on assignments, or grades in the class
-
-  **--Policies & Syllabus--**
-  * I can tell you about class policies other information you'd find in the syllabus
-  * I can tell you contact info for the teacher and the school
-  "
-
-  utter_hw:
-  - text: "I can tell you the homework. One sec, check..."
-
-  utter_project_details:
-  - text: "((PROJECT DETAILS PLACEHOLDER))"
-
-  utter_policy_choices:
-  - text: "((POLICY CHOICES PLACEHOLDER))"
-
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- bot_challenge
+- inquire_functionality
+- inquire_due
+- inquire_assignments
+- inquire_grades
+- inquire_homework
+- inquire_project
+- inquire_class_policy
+- goodbye
+- inquire_class_policies
+entities:
+- policy_choice
+slots:
+  policy_choice:
+    type: categorical
+    values:
+    - grading
+    - contact info
+    - project
+    - course description
+    - learning objectives
+    - required materials
+    - absentee
+responses:
+  utter_greet:
+  - text: Hi!
+  - text: Welcome to our demo!
+  utter_goodbye:
+  - text: Goodbye!
+  utter_explain_bot:
+  - text: I'm a chatbot, not a person. I'm here to act as your AI-powered virtual
+      assistant. Think of me as your robot secretary.
+  utter_explain_functionality:
+  - text: NOTE: DEMO MODE--SOME FUNCTIONALITY IS HAPPY PATHED** \n \n  \t \t \t I'm a meticulous\
+      \ note taker, and I've got all the information you need.  Here are some of the\
+      \ ways I can make your life easier: \n **--Deadlines and Due Dates--** * All\
+      \ the important dates, and deadlines? I can tell you those.\n\n **--Assignments\
+      \ and Projects--** * Want to know what the homework is? I can tell you that.\
+      \ * Got questions about a project? I can answer those, too. * Missing any work?\
+      \ I can point you in the right direction. \n **--Grades--** *  I can tell you\
+      \ your grades on assignments, or grades in the class\n**--Policies & Syllabus--**\
+      \ * I can tell you about class policies other information you'd find in the\
+      \ syllabus * I can tell you contact info for the teacher and the school
+  utter_hw:
+  - text: I can tell you the homework. One sec, check...
+  utter_project_details:
+  - text: ((PROJECT DETAILS PLACEHOLDER))
+  utter_policy_choices:
+  - text: ((POLICY CHOICES PLACEHOLDER))
+actions:
+- action_get_due_dates
+- action_get_grades
+- action_get_hw_details
+- action_get_assignments
+- action_describe_policy
