@@ -36,16 +36,18 @@ responses:
   - text: I'm a chatbot, not a person. I'm here to act as your AI-powered virtual
       assistant. Think of me as your robot secretary.
   utter_explain_functionality:
-  - text: NOTE: DEMO MODE--SOME FUNCTIONALITY IS HAPPY PATHED** \n \n  \t \t \t I'm a meticulous\
+  - text: "NOTE: DEMO MODE--SOME FUNCTIONALITY IS HAPPY PATHED** \n \n  \t \t \t I'm a meticulous\
       \ note taker, and I've got all the information you need.  Here are some of the\
-      \ ways I can make your life easier: \n **--Deadlines and Due Dates--** * All\
-      \ the important dates, and deadlines? I can tell you those.\n\n **--Assignments\
-      \ and Projects--** * Want to know what the homework is? I can tell you that.\
-      \ * Got questions about a project? I can answer those, too. * Missing any work?\
-      \ I can point you in the right direction. \n **--Grades--** *  I can tell you\
-      \ your grades on assignments, or grades in the class\n**--Policies & Syllabus--**\
-      \ * I can tell you about class policies other information you'd find in the\
-      \ syllabus * I can tell you contact info for the teacher and the school
+      \ ways I can make your life easier:"
+  utter_deadlines_functionality:
+    - text: " **--Deadlines and Due Dates--**
+    All the important dates, and deadlines? I can tell you those."
+  utter_assignments_functionality:
+    - text: "**--Assignments and Projects--** * Want to know what the homework is? I can tell you that. Got questions about a project? I can answer those, too."
+  utter_grades_functionality:
+    - text: "**--Grades--** *  I can tell you your grades on assignments, as well as your overall grade in each class. I can also tell you if you're missing any work!"
+  utter_policies_functionality:
+    - text: "**--Policies & Syllabus--** I can tell you about class policies other information you'd find in the syllabus. I can also tell you contact info for the teachers and the school"
   utter_hw:
   - text: I can tell you the homework. One sec, check...
   utter_project_details:

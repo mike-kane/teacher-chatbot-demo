@@ -8,12 +8,20 @@
 * bot_challenge
   - utter_explain_bot
   - utter_explain_functionality
+  - utter_deadlines_functionality
+  - utter_assignments_functionality
+  - utter_grades_functionality
+  - utter_policies_functionality
 
 ## greet + inquire functionality
 * greet
   - utter_greet
 * inquire_functionality
   - utter_explain_functionality
+  - utter_deadlines_functionality
+  - utter_assignments_functionality
+  - utter_grades_functionality
+  - utter_policies_functionality
   
 ## greet + ask hw
 * greet
@@ -67,3 +75,7 @@
 * bot_challenge
   - utter_explain_bot
   - utter_explain_functionality
+  - utter_deadlines_functionality
+  - utter_assignments_functionality
+  - utter_grades_functionality
+  - utter_policies_functionality
