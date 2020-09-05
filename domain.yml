@@ -43,6 +43,15 @@ intents:
 - inquire_english_grade
 - inquire_geometry_grade
 - inquire_history_grade
+- inquire_spanish_documents
+- inquire_history_documents
+- inquire_geometry_documents
+- inquire_english_documents
+- inquire_history_grade
+- inquire_spanish_syllabus
+- inquire_history_syllabus
+- inquire_geometry_syllabus
+- inquire_english_syllabus
 
 responses:
   utter_greet:

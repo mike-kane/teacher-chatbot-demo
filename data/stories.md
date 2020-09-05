@@ -142,6 +142,29 @@
   
 *****TODO: Finish Documents stories*****
 
+## inquire spanish syllabus
+
+## inquire history syllabus
+
+## inquire english syllabus
+
+## inquire geometry syllabus
+
+## inquire syllabus + which syllabus + inform history + give history syllabus
+
+## inquire syllabus + which syllabus + inform english + give english syllabus
+
+## inquire syllabus + which syllabus + inform geometry + give geometry syllabus
+
+## inquire syllabus + which syllabus + inform spanish + give spanish syllabus
+
+## inquire documents + class choices + inform class history + history document choices + {document choice}
+
+## inquire documents + class choices + inform class spanish + spanish document choices + {document choice}
+
+## inquire documents + class choices + inform class english + english document choices + {document choice}
+
+## inquire documents + class choices + inform class geometry + geometry document choices + {document choice} 
 
 *****TODO: Finish Assignments stories*****
 
