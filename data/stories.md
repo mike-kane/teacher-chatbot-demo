@@ -22,50 +22,132 @@
   - utter_assignments_functionality
   - utter_grades_functionality
   - utter_policies_functionality
+
+*****TODO: Finish Hw stories*****
+
+## inquire spanish hw
+* inquire_spanish_hw
+  - utter_hw_spanish
   
-## greet + ask hw
+## inquire hw
+* inquire_english_hw
+  - utter_hw_english_1
+  - utter_hw_english_2
+  
+## inquire geometry hw
+* inquire_geometry_hw
+  - utter_hw_geometry
+  
+## inquire history hw
+* inquire_history_hw
+  - utter_hw_history
+  
+## greet + ask hw + deny projects + deny_anything_else
 * greet
   - utter_greet
-* inquire_homework
-  - utter_hw
-  - action_get_hw_details
+* inquire_hw
+  - utter_hw_1
+  - utter_hw_spanish
+  - utter_hw_geometry
+  - utter_hw_english_1
+  - utter_hw_english_2
+  - utter_hw_history
+  _utter_hw_hear_projects
+* deny
+  - utter_anything_else
+* deny
+  - utter_goodbye
+  
+## greet + bot challenge + ask hw + deny projects + affirm + inquire functionality
+* greet
+  - utter_greet
+* inquire_hw
+  - utter_hw_1
+  - utter_hw_spanish
+  - utter_hw_geometry
+  - utter_hw_english_1
+  - utter_hw_english_2
+  - utter_hw_history
+  _utter_hw_hear_projects
+* deny
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## greet + bot challenge + ask hw + affirm projects 
+* greet
+  - utter_greet
+* inquire_hw
+  - utter_hw_1
+  - utter_hw_spanish
+  - utter_hw_geometry
+  - utter_hw_english_1
+  - utter_hw_english_2
+  - utter_hw_history
+  _utter_hw_hear_projects
+* affirm
+  - utter_project_choices
+* affirm_many
+  - utter_project_history
+  -utter_project_spanish
+  
+  *****TODO: Finish Project stories*****
 
 ## inquire project
-* inquire_project
-  - utter_project_details
-
-## inquire class policy
-* inquire_class_policy
-  - utter_policy_choices
-  - slot{"policy_choice": "grading"}
-  - action_describe_policy
-
-## greet + inquire class policy
-* greet
-  - utter_greet
-  - utter_explain_bot
-* inquire_class_policy{"policy_choice":"contact_info"}
-  - slot{"policy_choice":"contact_info"}
-  -action_describe_policy
+* inquire_projects
+  - utter_project_choices
+* affirm_many
+  - utter_project_spanish
+  - utter_project_history
   
-## inquire grade + inquire class policy
-* inquire_grades
-  - action_get_grades
-* inquire_class_policy{"policy_choice":"grading"}
-  - slot{"policy_choice":"grading"}
+## inquire history project
+* inquire_history_project
+  - utter_project_history
 
-## greet + inquire project + inquire due dates + inquire class policies
-* greet
-  - utter_greet
-  - utter_explain_bot
-* inquire_project
-  - utter_project_details
-* inquire_due
-  - action_get_due_dates
-* inquire_class_policy
-  - utter_policy_choices
-  - slot{"policy_choice":"project"}
-  - action_get_due_dates
+## inquire spanish project
+* inquire_spanish_project
+  - utter_project_spanish
+
+## inquire english project
+* inquire_english_project
+  - utter_project_english
+  
+## inquire geometry project
+* inquire_geometry_project
+  - utter_project_geometry
+  
+## inquire project + inform history
+* inquire_projects
+  - utter_project_choices
+* inform_history
+  - utter_history_project
+
+## inquire project + inform spanish
+* inquire_projects
+  - utter_project_choices
+* inform_spanish
+  - utter_spanish_project
+  
+## inquire project + inform english
+* inquire_projects
+  - utter_project_choices
+* inform_english
+  - utter_english_project
+  
+## inquire project + inform geometry
+* inquire_projects
+  - utter_project_choices
+* inform_geometry
+  - utter_geometry_project
+  
+*****TODO: Finish Documents stories*****
+
+
+*****TODO: Finish Assignments stories*****
+
+*****TODO: Finish Grades stories*****
+
+
 
 ## say goodbye
 * goodbye
@@ -79,3 +161,4 @@
   - utter_assignments_functionality
   - utter_grades_functionality
   - utter_policies_functionality
+  
