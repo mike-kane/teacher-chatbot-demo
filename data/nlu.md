@@ -30,6 +30,55 @@
 - what information do you have
 - what info can you give me
 
+
+*****TODO: Restructure NLU data to match new intents****
+
+****ALL INTENTS****
+- greet
+- bot_challenge
+- inquire_functionality
+- inquire_assignments
+- inquire_grades
+- inquire_hw
+- inquire_project
+- inquire_class_policy
+- goodbye
+- inquire_class_policies
+- affirm
+- deny
+- affirm_many
+- inform_english
+- inform_history
+- inform_spanish
+- inform_geometry
+- inform_syllabus
+- inform_hw
+- inform_project
+- inform_study_guide
+- inform_readings
+- inform_vocab_sheet
+- inform_due_dates_sheet
+- inquire_spanish_hw
+- inquire_geometry_hw
+- inquire_english_hw
+- inquire_history_hw
+- inquire_spanish_project
+- inquire_history_project
+- inquire_english_project
+- inquire_geometry_project
+- inquire_missing_assignments
+- inquire_history_assignments
+- inquire_english_assignments
+- inquire_spanish_assignments
+- inquire_geometry_assignments
+- inquire_spanish_grade
+- inquire_english_grade
+- inquire_geometry_grade
+- inquire_history_grade
+
+*********END************
+
+
 ## intent:inquire_due
 - what assignments are due soon
 - are there any outstanding assignments
@@ -121,3 +170,29 @@
 - goodbye
 - see you around
 - see you later
+
+## intent: affirm
+- yes
+- yes, please
+- ++
+- sure!
+- y
+- Y
+- Sure, why not?
+- Yup!
+- yep
+- of course!
+
+## intent: deny
+- no
+- that's a no from me
+- nope
+- n 
+- N
+- Not interested
+- Absolutely not
+- no thanks!
+- no thx
+- that wont be necessary
+- nah
+- maybe later
