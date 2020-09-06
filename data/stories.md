@@ -319,14 +319,31 @@
   
 *****TODO: Finish Assignments stories*****
 
-
 * inquire_assignments
-  - utter_assignments_class_choice
-* 
+  - full path through class choice for each class
+* inquire_{class}_assignments
+  - shortened path for each class
+* missing_assignments
+  - individual classes
+  - both classes
+* inquire_{class}_missing_grades
+  - create intents!!!
+  - add utter_no_missing_work response
+  - shortened path for each class
+
+*****END TODO*****
+
 
 
 *****TODO: Finish Grades stories*****
 
+* inquire_grades
+  - GPA grade
+  - full path through grades with each class with and without affirm cutout
+* inqiure_{class}_grades
+  - shortened path for each class
+
+*****END TODO*****
 
 
 ## say goodbye
