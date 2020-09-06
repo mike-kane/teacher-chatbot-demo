@@ -23,7 +23,6 @@
   - utter_grades_functionality
   - utter_policies_functionality
 
-*****TODO: Finish Hw stories*****
 
 ## inquire spanish hw
 * inquire_spanish_hw
@@ -90,8 +89,6 @@
 * affirm_many
   - utter_project_history
   -utter_project_spanish
-  
-  *****TODO: Finish Project stories*****
 
 ## inquire project
 * inquire_projects
@@ -139,15 +136,6 @@
   - utter_project_choices
 * inform_geometry
   - utter_geometry_project
-  
-*****TODO: DOCUMENTS*****
-
-* Notate all training paths in mindmap viz
-* Add anything_else workflow examples
-  - say no --> goodbye (add to end of each example)
-  - say yes --> another document cycle --> anything else 
-*****TODO: END*****
-
 
 ## inquire spanish syllabus + nothing else
 * inquire_spanish_syllabus
@@ -316,36 +304,564 @@
   - utter_english_document_choices
 * inform_inform_readings_sheet
   - utter_english_document_readings_sheet
-  
-*****TODO: Finish Assignments stories*****
 
+## inquire assignments +  assignments class choices + affirm many + assignments all outstanding
 * inquire_assignments
-  - full path through class choice for each class
-* inquire_{class}_assignments
-  - shortened path for each class
-* missing_assignments
-  - individual classes
-  - both classes
-* inquire_{class}_missing_grades
-  - create intents!!!
-  - add utter_no_missing_work response
-  - shortened path for each class
+  - utter_assignments_class_choice
+* affirm_many
+  - utter_assignments_all_outstanding
+  
+## inquire assignments + assignments class choices + spanish + class assignments outstanding + anything else + deny
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_spanish
+  - utter_assignments_spanish_outstanding
+  - utter_anything_else
+* deny
+  -utter_goodbye
+  
+## inquire assignments + assignments class choices + english + class assignments outstanding + anything else + deny
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_english
+  - utter_assignments_english_outstanding
+  - utter_anything_else
+* deny
+  -utter_goodbye
+  
+## inquire assignments + assignments class choices + history + class assignments outstanding + anything else + deny
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_history
+  - utter_assignments_history_outstanding
+  - utter_anything_else
+* deny
+  -utter_goodbye
+  
+## inquire assignments + assignments class choices + geometry + class assignments outstanding + anything else + deny
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_geometry
+  - utter_assignments_geometry_outstanding
+  - utter_anything_else
+* deny
+  -utter_goodbye
+  
+## inquire assignments + assignments class choices + spanish + class assignments outstanding + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_spanish
+  - utter_assignments_spanish_outstanding
+  - utter_anything_else
+* affirm
+  -utter_explain_functionality
+  
+## inquire assignments + assignments class choices + english + class assignments outstanding + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_english
+  - utter_assignments_english_outstanding
+  - utter_anything_else
+* affirm
+  -utter_explain_functionality
+  
+## inquire assignments + assignments class choices + history + class assignments outstanding + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_history
+  - utter_assignments_history_outstanding
+  - utter_anything_else
+* affirm
+  -utter_explain_functionality
+  
+## inquire assignments + assignments class choices + geometry + class assignments outstanding + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inform_geometry
+  - utter_assignments_geometry_outstanding
+  - utter_anything_else
+* affirm
+  -utter_explain_functionality
+  
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + affirm many + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +  + assignments missing geometry + affirm + assignments missing geometry note + anything else + deny + goodbye
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* affirm_many
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignments_missing_spanish_note_2a
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* deny
+  - utter_goodbye
+  
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + affirm many + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +  + assignments missing geometry + affirm + assignments missing geometry note + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* affirm_many
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignments_missing_spanish_note_2a
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
 
-*****END TODO*****
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +   + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_spanish
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignments_missing_spanish_note_2a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + affirm +  assignments missing geometry note 3a +   + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_geometry
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire assignments + assignments class choices + inquire missing assignments + assignments missing 1 + inform english + assignments all good
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_english
+  - utter_assignments_all_good
+
+## inquire assignments + assignments class choices + inquire missing assignments + assignments missing 1 + inform history + assignments all good
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_history
+  - utter_assignments_all_good
+  
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + deny + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_geometry
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + affirm +  assignments missing geometry note 3a +   + anything else + deny + goodbye
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_geometry
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish + note + deny + anything else + affirm + explain functionality
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_geometry
+  - utter_assignments_missing_geometry_3
+* deny
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing spanish + note + deny + anything else + deny + goodbye
+* inquire_assignments
+  - utter_assignments_class_choice
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_geometry
+  - utter_assignments_missing_geometry_3
+* deny
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire missing assignments + assignments missing 1 + both + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* affirm_many
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignments_missing_spanish_note_2a
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  -utter_anything_else
+* deny
+  - utter_goodbye
 
 
+## inquire missing assignments + assignments missing 1 + both + assignments missing spanish 2 + deny assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* affirm_many
+  - utter_assignments_missing_spanish_2
+* deny
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  -utter_anything_else
+* deny
+  - utter_goodbye
+  
+## inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + anything else + affirm + explain functionality
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_spanish
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignments_missing_spanish_note_2a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
 
-*****TODO: Finish Grades stories*****
+## inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + affirm + explain functionality
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_geometry
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
 
+## inquire missing assignments + assignments missing 1 + inform english + assignments all good + anything else + affirm + explain functionality
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_english
+  - utter_assignments_all_good
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire missing assignments + assignments missing 1 + inform history + assignments all good + anything else + affirm + explain functionality
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_history
+  - utter_assignments_all_good
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire spanish missing assignments + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + anything else + deny + goodbye
+* inquire_missing_assignments_spanish
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignmentS_missing_spanish_note_2a
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire spanish missing assignments + assignments missing spanish 2 + deny + anything else + deny + goodbye
+* inquire_missing_assignments_spanish
+  - utter_assignments_missing_spanish_2
+* deny
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire geometry missing assignments +  assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
+* inquire_missing_assignments_geometry
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignmentS_missing_geometry_note_3a
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire geometry missing assignments + assignments missing geometry 3 + deny + anything else + deny + goodbye
+* inquire_missing_assignments_geometry
+  - utter_assignments_missing_geometry_3
+* deny
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire english missing assignments + all good + anything else + deny + goodbye 
+* inquire_missing_assignments_english
+  - utter_assignments_all_good
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire history missing assignments + all good + anything else  + deny + goodbye 
+* inquire_missing_assignments_history
+  - utter_assignments_all_good
+  - utter_anything_else
+* deny
+  - utter_goodbye
+  
+## inquire missing assignments + assignments missing 1 + inform english + assignments all good + anything else + deny + goodbye
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_english
+  - utter_assignments_all_good
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire missing assignments + assignments missing 1 + inform history + assignments all good + anything else + deny + goodbye
+* inquire_missing_assignments
+  - utter_assignments_missing_1
+* inform_history
+  - utter_assignments_all_good
+  - utter_anything_else
+* deny
+  - utter_goodbye
+  
+## inquire spanish assignments + assignments spanish class outstanding + spanish project + view missing assignment spanish  + affirm + missing assignment spanish note 2a  + anything else + affirm + explain functionality
+* inquire_assignments_spanish
+  - utter_assignments_spanish_outstanding
+  - utter_project_spanish
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignments_missing_spanish_note_2a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire spanish assignments + assignments spanish class outstanding + spanish project +  view missing assignment spanish note + deny +  anything else + affirm + explain functionality
+* inquire_assignments_spanish
+  - utter_assignments_spanish_outstanding
+  - utter_project_spanish
+  - utter_assignments_missing_spanish_2
+* deny
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+
+## inquire geometry assignments + assignments geometry class outstanding + view missing assignment note geometry + affirm + view missing assignment note geometry 3a +  anything else + affirm + explain functionality
+* inquire_assignments_geometry
+  - utter_assignments_geometry_outstanding
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire geometry assignments + assignments geometry class outstanding + view missing assignment note + deny +  anything else + affirm + explain functionality
+* inquire_assignments_geometry
+  - utter_assignments_geometry_outstanding
+  - utter_assignments_missing_geometry_3
+* deny
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire history functionality + assignments history outstanding + history project +  anything else + affirm + explain_functionality
+* inquire_assignments_history
+  - utter_assignments_history_outstanding
+  - utter_project_history
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire history functionality + assignments history  outstanding + history project + anything else + deny + goodbye
+* inquire_assignments_history
+  - utter_assignments_history_outstanding
+  - utter_project_history
+  - utter_anything_else
+* deny
+  - utter_goodbye
+  
+## inquire english functionality + assignments english outstanding + anything else + affirm + explain functionality
+* inquire_assignments_english
+  - utter_assignments_english_outstanding
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire english functionality + assignments english outstanding + anything else + deny + goodbye
+* inquire_assignments_english
+  - utter_assignments_english_outstanding
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform english + utter_grades_english_more_info_4a + anything else + affirm + explain functionality
 * inquire_grades
-  - GPA grade
-  - full path through grades with each class with and without affirm cutout
-* inqiure_{class}_grades
-  - shortened path for each class
+  - utter_grades_class_more_info_2
+* affirm
+  - utter_grades_class_more_info_which_class_3
+* inform_english
+  - utter_grades_english_more_info_4a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
 
-*****END TODO*****
+## inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform geometry + utter_grades_geometry_more_info_4b + anything else + deny + goodbye
+* inquire_grades
+  - utter_grades_class_more_info_2
+* affirm
+  - utter_grades_class_more_info_which_class_3
+* inform_geometry
+  - utter_grades_geometry_more_info_4b
+  - utter_anything_else
+* deny
+  - utter_goodbye
 
+## inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform history + utter_grades_history_more_info_4c + anything else + deny + goodbye
+* inquire_grades
+  - utter_grades_class_more_info_2
+* affirm
+  - utter_grades_class_more_info_which_class_3
+* inform_history
+  - utter_grades_history_more_info_4c
+  - utter_anything_else
+* deny
+  - utter_goodbye
 
+## inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform spanish + utter_grades_spanish_more_info_4d + anything else + affirm + explain functionality
+* inquire_grades
+  - utter_grades_class_more_info_2
+* affirm
+  - utter_grades_class_more_info_which_class_3
+* inform_spanish
+  - utter_grades_spanish_more_info_4d
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+
+## inquire grades + grades class more info 2 + inform english + utter grades english more info 4a
+* inquire_grades
+  - utter_grades_class_more_info_2
+* inform_english
+  - utter_grades_english_more_info_4a
+  
+## inquire grades + grades class more info 2 + inform geometry + utter grades english more info 4b
+* inquire_grades
+  - utter_grades_class_more_info_2
+* inform_geometry
+  - utter_grades_geometry_class_more_info_4b
+  
+## inquire grades + grades class more info 2 + inform history + utter grades english more info 4c
+* inquire_grades
+  - utter_grades_class_more_info_2
+* inform_history
+  - utter_grades_history_class_more_info_4c
+ 
+## inquire grades + grades class more info 2 + inform spanish + utter grades english more info 4d
+* inquire_grades
+  - utter_grades_class_more_info_2
+* inform_spanish
+  - utter_grades_spanish_class_more_info_4d
+  
+## inquire {class} grade
+* inquire_{class}_grade
+  - utter_grades_{class}_more_info_4{}
+
+## inquire {class} grade
+* inquire_{class}_grade
+  - utter_grades_{class}_more_info_4{}
+  
+## inquire {class} grade
+* inquire_{class}_grade
+  - utter_grades_{class}_more_info_4{}
+  
+## inquire {class} grade
+* inquire_{class}_grade
+  - utter_grades_{class}_more_info_4{}
+  
+## inquire spanish grade + missing assignment note attached + affirm + view note
+* inquire_spanish_grade
+  - utter_grades_spanish_more_info_4d
+  - utter_assignments_missing_spanish_2
+* affirm
+  - utter_assignments_missing_spanish_note_2a
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire spanish grade + missing assignment note attached + deny + anything else + deny + goodbye
+* inquire_spanish_grade
+  - utter_grades_spanish_more_info_4d
+  - utter_assignments_missing_spanish_2
+* deny
+  - utter_anything_else
+* deny
+  - utter_goodbye
+  
+## inquire geometry grade + missing assignment note attached + affirm + view note + anything else + affirm + explain functionality
+* inquire_geometry_grade
+  - utter_grades_geometry_more_info_4b
+  - utter_assignments_missing_geometry_3
+* affirm
+  - utter_assignments_missing_geometry_note_3a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire geometry grade + missing assignment note attached + deny + anything else + affirm + explain functionality
+* inquire_geometry_grade
+  - utter_grades_geometry_more_info_4b
+  - utter_assignments_missing_geometry_3
+* deny
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire history grade + utter grades class more info 4c + affirm + explain functionality
+* inquire_grade_history
+  - utter_grades_history_more_info_4c
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire history grade + utter grades class more info 4c + anything else + deny + goodbye
+* inquire_grade_history
+  - utter_grades_history_more_info_4c
+  - utter_anything_else
+* deny
+  - utter_goodbye
+
+## inquire english grade + utter grades class more info 4a + anything else + affirm + explain functionality
+* inquire_grade_english
+  - utter_grades_english_more_info_4a
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire english grade + utter grades class more info 4a + anything else + deny + goodbye
+* inquire_grade_english
+  - utter_grades_english_more_info_4a
+  - utter_anything_else
+* deny
+  - utter_goodbye
+  
 ## say goodbye
 * goodbye
   - utter_goodbye
