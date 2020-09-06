@@ -29,7 +29,7 @@
 * inquire_spanish_hw
   - utter_hw_spanish
   
-## inquire hw
+## inquire english hw
 * inquire_english_hw
   - utter_hw_english_1
   - utter_hw_english_2
@@ -140,33 +140,190 @@
 * inform_geometry
   - utter_geometry_project
   
-*****TODO: Finish Documents stories*****
+*****TODO: DOCUMENTS*****
 
-## inquire spanish syllabus
+* Notate all training paths in mindmap viz
+* Add anything_else workflow examples
+  - say no --> goodbye (add to end of each example)
+  - say yes --> another document cycle --> anything else 
+*****TODO: END*****
 
-## inquire history syllabus
 
-## inquire english syllabus
+## inquire spanish syllabus + nothing else
+* inquire_spanish_syllabus
+  - utter_spanish_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
+  
+## inquire history syllabus + nothing else
+* inquire_history_syllabus
+  - utter_history_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
+  
+## inquire english syllabus + nothing else
+* inquire_english_syllabus
+  - utter_english_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
 
-## inquire geometry syllabus
+## inquire geometry syllabus + nothing else
+* inquire_geometry_syllabus
+  - utter_geometry_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
 
-## inquire syllabus + which syllabus + inform history + give history syllabus
+## inquire spanish syllabus + affirm anything else
+* inquire_spanish_syllabus
+  - utter_spanish_document_syllabus
+  - utter_anything_else
+* affirm
+  - utter_explain_functionality
+  
+## inquire history syllabus + nothing else
+* inquire_history_syllabus
+  - utter_history_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
+
+## inquire english syllabus + nothing else
+* inquire_english_syllabus
+  - utter_english_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
+
+## inquire geometry syllabus + nothing else
+* inquire_geometry_syllabus
+  - utter_geometry_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
+
+
+  
+## inform syllabus + which syllabus + inform history + give history syllabus
+* inquire_syllabus
+  - utter_which_class
+* inform_history
+  - utter_history_document_syllabus
 
 ## inquire syllabus + which syllabus + inform english + give english syllabus
+* inquire_syllabus
+  - utter_which_class
+* inform_english
+  - utter_english_document_syllabus
 
 ## inquire syllabus + which syllabus + inform geometry + give geometry syllabus
-
+* inquire_syllabus
+  - utter_which_class
+* inform_geometry
+  - utter_geometry_document_syllabus  
+  
 ## inquire syllabus + which syllabus + inform spanish + give spanish syllabus
+* inquire_syllabus
+  - utter_which_class
+* inform_spanish
+  - utter_spanish_document_syllabus
 
-## inquire documents + class choices + inform class history + history document choices + {document choice}
+## inquire documents + class choices + inform class history + history document choices + inform study guide
+* inquire_documents
+  - utter_which_class
+* inform_history
+  - utter_history_document_choices
+* inform_study_guide
+  - utter_history_document_study_guide
+  
+## inquire documents + class choices + inform class history + history document choices + inform syllabus
+* inquire_documents
+  - utter_which_class
+* inform_history
+  - utter_history_document_choices
+* inform_syllabus
+  - utter_history_document_syllabus
+  
+## inquire documents + class choices + inform class history + history document choices + inform hw + anything else + deny + goodbye
+* inquire_documents
+  - utter_which_class
+* inform_history
+  - utter_history_document_choices
+* inform_hw
+  - utter_history_document_hw
+  - utter_anything_else
+* Deny
+  - utter_goodbye
+  
+ ## inquire documents + class choices + inform class spanish + spanish document choices + inform + anything else + deny + goodbye
+* inquire_documents
+  - utter_which_class
+* inform_history
+  - utter_spanish_document_choices
+* inform_syllabus
+  - utter_spanish_document_syllabus
+  - utter_anything_else
+* Deny
+  - utter_goodbye
+  
+## inquire documents + class choices + inform spanish + spanish document choices + inform vocab sheet
+* inquire_documents
+  - utter_which_class
+* inform_spanish
+  - utter_spanish_document_choices
+* inform_vocab_sheet
+  - utter_spanish_document_vocab_sheet
+  
+## inquire documents + class choices + inform spanish + spanish document choices + inform hw
+* inquire_documents
+  - utter_which_class
+* inform_spanish
+  - utter_spanish_document_choices
+* inform_hw
+  - utter_spanish_document_hw
+  
+## inquire documents + class choices + inform class geometry + geometry document choices + inform_syllabus
+* inquire_documents
+  - utter_which_class
+* inform_geometry
+  - utter_geometry_document_choices
+* inform_syllabus
+  - utter_geometry_document_syllabus
 
-## inquire documents + class choices + inform class spanish + spanish document choices + {document choice}
-
-## inquire documents + class choices + inform class english + english document choices + {document choice}
-
-## inquire documents + class choices + inform class geometry + geometry document choices + {document choice} 
-
+## inquire documents + class choices + inform class geometry + geometry document choices + due dates sheet
+* inquire_documents
+  - utter_which_class
+* inform_geometry
+  - utter_geometry_document_choices
+* inform_due_dates_sheet
+  - utter_geometry_document_assignments_due_dates_sheet
+  
+## inquire documents + class choices + inform class english + english document choices + syllabus 
+* inquire_documents
+  - utter_which_class
+* inform_english
+  - utter_english_document_choices
+* inform_syllabus
+  - utter_english_document_syllabus
+ 
+## inquire documents + class choices + inform class english + english document choices + readings 
+* inquire_documents
+  - utter_which_class
+* inform_english
+  - utter_english_document_choices
+* inform_inform_readings_sheet
+  - utter_english_document_readings_sheet
+  
 *****TODO: Finish Assignments stories*****
+
+
+* inquire_assignments
+  - utter_assignments_class_choice
+* 
+
 
 *****TODO: Finish Grades stories*****
 

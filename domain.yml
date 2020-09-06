@@ -23,7 +23,7 @@ intents:
 - inform_hw
 - inform_project
 - inform_study_guide
-- inform_readings
+- inform_readings_sheet
 - inform_vocab_sheet
 - inform_due_dates_sheet
 - inquire_spanish_hw
@@ -55,10 +55,9 @@ intents:
 
 responses:
   utter_greet:
-  - text: Hi!
-  - text: Welcome to our demo!
+  - text: "Hi!"
   utter_goodbye:
-  - text: Goodbye!
+  - text: "Goodbye!"
   utter_explain_bot:
   - text: "I'm a chatbot, not a person. I'm here to act as your AI-powered virtual assistant. Think of me as your robot secretary."
   utter_explain_functionality:
@@ -104,13 +103,15 @@ responses:
     - text: "History document PLACEHOLDER"
   utter_history_document_study_guide:
     - text: "History document study guidePLACEHOLDER"
-  utter_history_document_hw_2:
+  utter_history_document_hw:
     - text: "History document hw2 PLACEHOLDER"
   utter_geometry_documents_choices:
     - text: "Your Geometry class has uploaded the following documents: \n  * Syllabus \n * Assignments and Due Dates Spreadsheet \n \n Which would you like me to send you?"
   utter_geometry_document_syllabus:
     - text: "Geometry document syllabus PLACEHOLDER"
-  utter_geometry_document_assignments_due_dates_sheet:
+  utter_which_class:
+    text: "Which class? \n \n * English \n * Geometry \n * History \n * Spanish"
+utter_geometry_document_assignments_due_dates_sheet:
     - text: "Geometry document assignments due date spreadsheet PLACEHOLDER"
   utter_spanish_documents_choices:
     - text: "Your Spanish class has uploaded the following documents: \n  * Syllabus \n * \n Unit 2 Vocab Sheet \n * Homework 3 \n * Project description  \n \n Which would you like me to send you?"
@@ -118,7 +119,7 @@ responses:
     - text: "spanish document syllabus PLACEHOLDER"
   utter_spanish_document_vocab_sheet:
     - text: "spanish document vocab sheet PLACEHOLDER"
-  utter_spanish_document_hw_3:
+  utter_spanish_document_hw:
     - text: "Spanish document hw3 PLACEHOLDER"
   utter_english_documents_choices:
     - text: "Your English class has uploaded the following documents: \n  * Syllabus \n * Readings Spreadsheet \n \n Which would you like me to send you?"
