@@ -8,21 +8,18 @@
 * bot_challenge
   - utter_explain_bot
   - utter_explain_functionality
-  - utter_deadlines_functionality
-  - utter_assignments_functionality
-  - utter_grades_functionality
-  - utter_policies_functionality
+  - utter_explain_deadlines_functionality
+  - utter_explain_assignments_functionality
+  - utter_explain_grades_functionality
 
 ## greet + inquire functionality
 * greet
   - utter_greet
 * inquire_functionality
   - utter_explain_functionality
-  - utter_deadlines_functionality
-  - utter_assignments_functionality
-  - utter_grades_functionality
-  - utter_policies_functionality
-
+  - utter_explain_deadlines_functionality
+  - utter_explain_assignments_functionality
+  - utter_explain_grades_functionality
 
 ## inquire spanish hw
 * inquire_spanish_hw
@@ -51,7 +48,7 @@
   - utter_hw_english_1
   - utter_hw_english_2
   - utter_hw_history
-  _utter_hw_hear_projects
+  - utter_hw_hear_projects
 * deny
   - utter_anything_else
 * deny
@@ -67,7 +64,7 @@
   - utter_hw_english_1
   - utter_hw_english_2
   - utter_hw_history
-  _utter_hw_hear_projects
+  - utter_hw_hear_projects
 * deny
   - utter_anything_else
 * affirm
@@ -83,7 +80,7 @@
   - utter_hw_english_1
   - utter_hw_english_2
   - utter_hw_history
-  _utter_hw_hear_projects
+  - utter_hw_hear_projects
 * affirm
   - utter_project_choices
 * affirm_many
@@ -91,7 +88,7 @@
   -utter_project_spanish
 
 ## inquire project
-* inquire_projects
+* inquire_project
   - utter_project_choices
 * affirm_many
   - utter_project_spanish
@@ -114,55 +111,55 @@
   - utter_project_geometry
   
 ## inquire project + inform history
-* inquire_projects
+* inquire_project
   - utter_project_choices
 * inform_history
-  - utter_history_project
+  - utter_project_history
 
 ## inquire project + inform spanish
-* inquire_projects
+* inquire_project
   - utter_project_choices
 * inform_spanish
-  - utter_spanish_project
+  - utter_project_spanish
   
 ## inquire project + inform english
-* inquire_projects
+* inquire_project
   - utter_project_choices
 * inform_english
-  - utter_english_project
+  - utter_project_english
   
 ## inquire project + inform geometry
-* inquire_projects
+* inquire_project
   - utter_project_choices
 * inform_geometry
-  - utter_geometry_project
+  - utter_project_geometry
 
 ## inquire spanish syllabus + nothing else
 * inquire_spanish_syllabus
   - utter_spanish_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
   
 ## inquire history syllabus + nothing else
 * inquire_history_syllabus
   - utter_history_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
   
 ## inquire english syllabus + nothing else
 * inquire_english_syllabus
   - utter_english_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
 
 ## inquire geometry syllabus + nothing else
 * inquire_geometry_syllabus
   - utter_geometry_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
 
 ## inquire spanish syllabus + affirm anything else
@@ -176,133 +173,133 @@
 * inquire_history_syllabus
   - utter_history_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
 
 ## inquire english syllabus + nothing else
 * inquire_english_syllabus
   - utter_english_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
 
 ## inquire geometry syllabus + nothing else
 * inquire_geometry_syllabus
   - utter_geometry_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
 
 
   
 ## inform syllabus + which syllabus + inform history + give history syllabus
-* inquire_syllabus
+* inform_syllabus
   - utter_which_class
 * inform_history
   - utter_history_document_syllabus
 
-## inquire syllabus + which syllabus + inform english + give english syllabus
-* inquire_syllabus
+## inform syllabus + which syllabus + inform english + give english syllabus
+* inform_syllabus
   - utter_which_class
 * inform_english
   - utter_english_document_syllabus
 
-## inquire syllabus + which syllabus + inform geometry + give geometry syllabus
-* inquire_syllabus
+## inform syllabus + which syllabus + inform geometry + give geometry syllabus
+* inform_syllabus
   - utter_which_class
 * inform_geometry
   - utter_geometry_document_syllabus  
   
-## inquire syllabus + which syllabus + inform spanish + give spanish syllabus
-* inquire_syllabus
+## inform syllabus + which syllabus + inform spanish + give spanish syllabus
+* inform_syllabus
   - utter_which_class
 * inform_spanish
   - utter_spanish_document_syllabus
 
-## inquire documents + class choices + inform class history + history document choices + inform study guide
-* inquire_documents
+## inform documents + class choices + inform class history + history document choices + inform study guide
+* inform_documents
   - utter_which_class
 * inform_history
   - utter_history_document_choices
 * inform_study_guide
   - utter_history_document_study_guide
   
-## inquire documents + class choices + inform class history + history document choices + inform syllabus
-* inquire_documents
+## inform documents + class choices + inform class history + history document choices + inform syllabus
+* inform_documents
   - utter_which_class
 * inform_history
   - utter_history_document_choices
 * inform_syllabus
   - utter_history_document_syllabus
   
-## inquire documents + class choices + inform class history + history document choices + inform hw + anything else + deny + goodbye
-* inquire_documents
+## inform_documents + class choices + inform class history + history document choices + inform hw + anything else + deny + goodbye
+* inform_documents
   - utter_which_class
 * inform_history
   - utter_history_document_choices
 * inform_hw
   - utter_history_document_hw
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
   
- ## inquire documents + class choices + inform class spanish + spanish document choices + inform + anything else + deny + goodbye
-* inquire_documents
+ ## inform_documents + class choices + inform class spanish + spanish document choices + inform + anything else + deny + goodbye
+* inform_documents
   - utter_which_class
 * inform_history
   - utter_spanish_document_choices
 * inform_syllabus
   - utter_spanish_document_syllabus
   - utter_anything_else
-* Deny
+* deny
   - utter_goodbye
   
-## inquire documents + class choices + inform spanish + spanish document choices + inform vocab sheet
-* inquire_documents
+## inform_documents + class choices + inform spanish + spanish document choices + inform vocab sheet
+* inform_documents
   - utter_which_class
 * inform_spanish
   - utter_spanish_document_choices
 * inform_vocab_sheet
   - utter_spanish_document_vocab_sheet
   
-## inquire documents + class choices + inform spanish + spanish document choices + inform hw
-* inquire_documents
+## inform_documents + class choices + inform spanish + spanish document choices + inform hw
+* inform_documents
   - utter_which_class
 * inform_spanish
   - utter_spanish_document_choices
 * inform_hw
   - utter_spanish_document_hw
   
-## inquire documents + class choices + inform class geometry + geometry document choices + inform_syllabus
-* inquire_documents
+## inform_documents + class choices + inform class geometry + geometry document choices + inform_syllabus
+* inform_documents
   - utter_which_class
 * inform_geometry
   - utter_geometry_document_choices
 * inform_syllabus
   - utter_geometry_document_syllabus
 
-## inquire documents + class choices + inform class geometry + geometry document choices + due dates sheet
-* inquire_documents
+## inform_documents + class choices + inform class geometry + geometry document choices + due dates sheet
+* inform_documents
   - utter_which_class
 * inform_geometry
   - utter_geometry_document_choices
 * inform_due_dates_sheet
   - utter_geometry_document_assignments_due_dates_sheet
   
-## inquire documents + class choices + inform class english + english document choices + syllabus 
-* inquire_documents
+## inform_documents + class choices + inform class english + english document choices + syllabus 
+* inform_documents
   - utter_which_class
 * inform_english
   - utter_english_document_choices
 * inform_syllabus
   - utter_english_document_syllabus
  
-## inquire documents + class choices + inform class english + english document choices + readings 
-* inquire_documents
+## inform_documents + class choices + inform class english + english document choices + readings 
+* inform_documents
   - utter_which_class
 * inform_english
   - utter_english_document_choices
-* inform_inform_readings_sheet
+* inform_readings_sheet
   - utter_english_document_readings_sheet
 
 ## inquire assignments +  assignments class choices + affirm many + assignments all outstanding
@@ -579,7 +576,7 @@
 * inquire_missing_assignments_spanish
   - utter_assignments_missing_spanish_2
 * affirm
-  - utter_assignmentS_missing_spanish_note_2a
+  - utter_assignments_missing_spanish_note_2a
   - utter_anything_else
 * deny
   - utter_goodbye
@@ -596,7 +593,7 @@
 * inquire_missing_assignments_geometry
   - utter_assignments_missing_geometry_3
 * affirm
-  - utter_assignmentS_missing_geometry_note_3a
+  - utter_assignments_missing_geometry_note_3a
   - utter_anything_else
 * deny
   - utter_goodbye
@@ -766,38 +763,22 @@
 * inquire_grades
   - utter_grades_class_more_info_2
 * inform_geometry
-  - utter_grades_geometry_class_more_info_4b
+  - utter_grades_geometry_more_info_4b
   
 ## inquire grades + grades class more info 2 + inform history + utter grades english more info 4c
 * inquire_grades
   - utter_grades_class_more_info_2
 * inform_history
-  - utter_grades_history_class_more_info_4c
+  - utter_grades_history_more_info_4c
  
 ## inquire grades + grades class more info 2 + inform spanish + utter grades english more info 4d
 * inquire_grades
   - utter_grades_class_more_info_2
 * inform_spanish
-  - utter_grades_spanish_class_more_info_4d
-  
-## inquire {class} grade
-* inquire_{class}_grade
-  - utter_grades_{class}_more_info_4{}
-
-## inquire {class} grade
-* inquire_{class}_grade
-  - utter_grades_{class}_more_info_4{}
-  
-## inquire {class} grade
-* inquire_{class}_grade
-  - utter_grades_{class}_more_info_4{}
-  
-## inquire {class} grade
-* inquire_{class}_grade
-  - utter_grades_{class}_more_info_4{}
+  - utter_grades_spanish_more_info_4d
   
 ## inquire spanish grade + missing assignment note attached + affirm + view note
-* inquire_spanish_grade
+* inquire_grade_spanish
   - utter_grades_spanish_more_info_4d
   - utter_assignments_missing_spanish_2
 * affirm
@@ -807,7 +788,7 @@
   - utter_goodbye
 
 ## inquire spanish grade + missing assignment note attached + deny + anything else + deny + goodbye
-* inquire_spanish_grade
+* inquire_grade_spanish
   - utter_grades_spanish_more_info_4d
   - utter_assignments_missing_spanish_2
 * deny
@@ -816,7 +797,7 @@
   - utter_goodbye
   
 ## inquire geometry grade + missing assignment note attached + affirm + view note + anything else + affirm + explain functionality
-* inquire_geometry_grade
+* inquire_grade_geometry
   - utter_grades_geometry_more_info_4b
   - utter_assignments_missing_geometry_3
 * affirm
@@ -826,7 +807,7 @@
   - utter_explain_functionality
   
 ## inquire geometry grade + missing assignment note attached + deny + anything else + affirm + explain functionality
-* inquire_geometry_grade
+* inquire_grade_geometry
   - utter_grades_geometry_more_info_4b
   - utter_assignments_missing_geometry_3
 * deny
@@ -870,8 +851,7 @@
 * bot_challenge
   - utter_explain_bot
   - utter_explain_functionality
-  - utter_deadlines_functionality
-  - utter_assignments_functionality
-  - utter_grades_functionality
-  - utter_policies_functionality
+  - utter_explain_deadlines_functionality
+  - utter_explain_assignments_functionality
+  - utter_explain_grades_functionality
   
