@@ -20,6 +20,7 @@ intents:
 - inform_spanish
 - inform_geometry
 - inform_syllabus
+- inform_documents
 - inform_hw
 - inform_project
 - inform_study_guide
@@ -51,7 +52,6 @@ intents:
 - inquire_history_documents
 - inquire_geometry_documents
 - inquire_english_documents
-- inquire_history_grade
 - inquire_spanish_syllabus
 - inquire_history_syllabus
 - inquire_geometry_syllabus
@@ -59,113 +59,115 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hi!"
+  - custom: "Hi!"
   utter_goodbye:
-  - text: "Goodbye!"
+  - custom: "Goodbye!"
   utter_explain_bot:
-  - text: "I'm a chatbot, not a person. I'm here to act as your AI-powered virtual assistant. Think of me as your robot secretary."
+  - custom: "I'm a chatbot, not a person. I'm here to act as your AI-powered virtual assistant. Think of me as your robot secretary."
   utter_explain_functionality:
-  - text: "What can I do for you?  Here are some of the  ways I can make your life easier:"
-  utter_explain_deadlines_functionality_1:
-    - text: " **--Deadlines and Due Dates--** \n
-    \t  All the important dates, and deadlines? I can tell you those."
-  utter_explain_assignments_functionality_2:
-    - text: "**--Assignments and Projects--** * \n \t Want to know  what the homework is? I can tell you that. Got questions about a project? I can answer those, too."
-  utter_explain_grades_functionality_3:
-    - text: "**--Grades--** * \n \t I can tell you your grades on assignments, as well as your overall grade in each class. I can also tell you if you're missing any work!"
-  utter_explain_documents_functionality_4:
-    - text: "**--Documents--**  \n I can send you copies of any document from your classes that your teachers have uploaded. Need to see your syllabus? Lost your study guide? I can help you with that!"
+  - custom: "What can I do for you?  Here are some of the  ways I can make your life easier:"
+  utter_explain_deadlines_functionality:
+  - custom: " **--Deadlines and Due Dates--** \n
+  \t  All the important dates, and deadlines? I can tell you those."
+  utter_explain_assignments_functionality:
+  - custom: "**--Assignments and Projects--** * \n \t Want to know  what the homework is? I can tell you that. Got questions about a project? I can answer those, too."
+  utter_explain_grades_functionality:
+  - custom: "**--Grades--** * \n \t I can tell you your grades on assignments, as well as your overall grade in each class. I can also tell you if you're missing any work!"
+  utter_explain_documents_functionality:
+  - custom: "**--Documents--**  \n I can send you copies of any document from your classes that your teachers have uploaded. Need to see your syllabus? Lost your study guide? I can help you with that!"
   utter_hw_1:
-    - text: "Here's your homework for each class:"
+  - custom: "Here's your homework for each class:"
   utter_hw_spanish:
-    - text: "Spanish 2 homework: \n * Homework 3: Complete verb conjugation worksheet \n Due Date: Wednesday"
+  - custom: "Spanish 2 homework: \n * Homework 3: Complete verb conjugation worksheet \n Due Date: Wednesday"
   utter_hw_geometry:
-    - text: "Geometry homework \n * Homework 5:  pp 176-178, odd #s only \n Due Date: Wednesday"
+  - custom: "Geometry homework \n * Homework 5:  pp 176-178, odd #s only \n Due Date: Wednesday"
   utter_hw_english_1:
-    - text: "English 2 homework: \n * Homework 2: Read Young Goodman Brown, by Nathaniel Hawthorne. \n Due date:  \n Thursday  https://www.gutenberg.org/files/512/512-h/512-h.htm#goodman "
+  - custom: "English 2 homework: \n * Homework 2: Read Young Goodman Brown, by Nathaniel Hawthorne. \n Due date:  \n Thursday  https://www.gutenberg.org/files/512/512-h/512-h.htm#goodman "
   utter_hw_english_2:
-    - text: "English 2 homework: \n Essay 1: Finish reflection essay.\n Due date: Friday"
+  - custom: "English 2 homework: \n Essay 1: Finish reflection essay.\n Due date: Friday"
   utter_hw_history:
-    - text: "History homework: None"
+  - custom: "History homework: None"
   utter_hw_hear_projects:
-    - text: "You also have projects in two classes. Would you like to know about these projects?"
+  - custom: "You also have projects in two classes. Would you like to know about these projects?"
   utter_project_choices:
-    - text: "You have two projects I can tell you about. Which one are you interested in? \n Spanish or History?"
+  - custom: "You have two projects I can tell you about. Which one are you interested in? \n Spanish or History?"
   utter_project_geometry:
-    - text: "Your Geometry class doesn't have any projects listed, currently."
+  - custom: "Your Geometry class doesn't have any projects listed, currently."
   utter_project_english:
-    - text: "Your English class doesn't have any projects listed, currently."
+  - custom: "Your English class doesn't have any projects listed, currently."
   utter_project_spanish:
-    - text: "From Ms. Ramirez:  \"You and your group will create a skit using all of this semester's vocab words in a conversation. See attached document for details.\"  \n * Due Date: 9/25/20 \n https://docs.google.com/document/d/1WaG2_0T28VQ061QIv7_dW-i9Hms60XLQbaIKnH0XLis/edit?usp=sharing"
+  - custom: "From Ms. Ramirez:  \"You and your group will create a skit using all of this semester's vocab words in a conversation. See attached document for details.\"  \n * Due Date: 9/25/20 \n https://docs.google.com/document/d/1WaG2_0T28VQ061QIv7_dW-i9Hms60XLQbaIKnH0XLis/edit?usp=sharing"
   utter_project_history:
-    - text: "From Mrs. Patillo:  \"Create a diorama explaining the Battle of Gettysburg. See document for more info\" \n * Due Date: 10/7/20 \n https://docs.google.com/document/d/1KExf_tr8xHse_hNUXXy1QXfrOD5H4Zdv7wlcWRHQoBE/edit?usp=sharing"
+  - custom: "From Mrs. Patillo:  \"Create a diorama explaining the Battle of Gettysburg. See document for more info\" \n * Due Date: 10/7/20 \n https://docs.google.com/document/d/1KExf_tr8xHse_hNUXXy1QXfrOD5H4Zdv7wlcWRHQoBE/edit?usp=sharing"
   utter_get_documents_class_choice:
-    - text: "Lost your copy of a document from a class? If your teacher has uploaded them, I can send you a copy! \n Which class would you like documents from? \n \n * Geometry \n * Spanish \n * English \n * History"
-  utter_history_documents_choices:
-    - text: "Your American History class has uploaded the following documents: \n  * Syllabus \n * \n Unit 1 Study Guide \n * Homework 2 \n * Project description  \n \n Which would you like me to send you?"
+  - custom: "Lost your copy of a document from a class? If your teacher has uploaded them, I can send you a copy! \n Which class would you like documents from? \n \n * Geometry \n * Spanish \n * English \n * History"
+  utter_history_document_choices:
+  - custom: "Your American History class has uploaded the following documents: \n  * Syllabus \n * \n Unit 1 Study Guide \n * Homework 2 \n * Project description  \n \n Which would you like me to send you?"
   utter_history_document_syllabus:
-    - text: "History document PLACEHOLDER"
+  - custom: "History document PLACEHOLDER"
   utter_history_document_study_guide:
-    - text: "History document study guidePLACEHOLDER"
+  - custom: "History document study guidePLACEHOLDER"
   utter_history_document_hw:
-    - text: "History document hw2 PLACEHOLDER"
-  utter_geometry_documents_choices:
-    - text: "Your Geometry class has uploaded the following documents: \n  * Syllabus \n * Assignments and Due Dates Spreadsheet \n \n Which would you like me to send you?"
+  - custom: "History document hw2 PLACEHOLDER"
+  utter_geometry_document_choices:
+  - custom: "Your Geometry class has uploaded the following documents: \n  * Syllabus \n * Assignments and Due Dates Spreadsheet \n \n Which would you like me to send you?"
   utter_geometry_document_syllabus:
-    - text: "Geometry document syllabus PLACEHOLDER"
+  - custom: "Geometry document syllabus PLACEHOLDER"
   utter_which_class:
-    text: "Which class? \n \n * English \n * Geometry \n * History \n * Spanish"
-utter_geometry_document_assignments_due_dates_sheet:
-    - text: "Geometry document assignments due date spreadsheet PLACEHOLDER"
-  utter_spanish_documents_choices:
-    - text: "Your Spanish class has uploaded the following documents: \n  * Syllabus \n * \n Unit 2 Vocab Sheet \n * Homework 3 \n * Project description  \n \n Which would you like me to send you?"
+  - custom: "Which class? \n \n * English \n * Geometry \n * History \n * Spanish"
+  utter_geometry_document_assignments_due_dates_sheet:
+  - custom: "Geometry document assignments due date spreadsheet PLACEHOLDER"
+  utter_spanish_document_choices:
+  - custom: "Your Spanish class has uploaded the following documents: \n  * Syllabus \n * \n Unit 2 Vocab Sheet \n * Homework 3 \n * Project description  \n \n Which would you like me to send you?"
   utter_spanish_document_syllabus:
-    - text: "spanish document syllabus PLACEHOLDER"
+  - custom: "spanish document syllabus PLACEHOLDER"
   utter_spanish_document_vocab_sheet:
-    - text: "spanish document vocab sheet PLACEHOLDER"
+  - custom: "spanish document vocab sheet PLACEHOLDER"
   utter_spanish_document_hw:
-    - text: "Spanish document hw3 PLACEHOLDER"
-  utter_english_documents_choices:
-    - text: "Your English class has uploaded the following documents: \n  * Syllabus \n * Readings Spreadsheet \n \n Which would you like me to send you?"
+  - custom: "Spanish document hw3 PLACEHOLDER"
+  utter_english_document_choices:
+  - custom: "Your English class has uploaded the following documents: \n  * Syllabus \n * Readings Spreadsheet \n \n Which would you like me to send you?"
   utter_english_document_syllabus:
-    - text: "english document syllabus PLACEHOLDER"
+  - custom: "english document syllabus PLACEHOLDER"
   utter_english_document_readings_sheet:
-    - text: "english document readings spreadsheet PLACEHOLDER"
+  - custom: "english document readings spreadsheet PLACEHOLDER"
   utter_assignments_class_choice:
-    - text: "Which class would you like to view your assignments for? \n * English 2, \n * Geometry,  \n * History, \n * Spanish 2"
+  - custom: "Which class would you like to view your assignments for? \n * English 2, \n * Geometry,  \n * History, \n * Spanish 2"
   utter_assignments_all_outstanding:
-    - text: "The following assignments are due in each class:  \n * Spanish 2:  \n * Quiz 1"
+  - custom: "The following assignments are due in each class:  \n * Spanish 2:  \n * Quiz 1"
   utter_assignments_spanish_outstanding:
-    - text: "You have the following assignments due in Spanish 2:  \n  * Quiz 1 \t Due Date:  Thursday"
+  - custom: "You have the following assignments due in Spanish 2:  \n  * Quiz 1 \t Due Date:  Thursday"
   utter_assignments_history_outstanding:
-    - text: "History Outstanding Assignments PLACEHOLDER"
+  - custom: "History Outstanding Assignments PLACEHOLDER"
   utter_assignments_english_outstanding:
-    - text: "English Outstanding Assignments PLACEHOLDER"
+  - custom: "English Outstanding Assignments PLACEHOLDER"
   utter_assignments_geometry_outstanding:
-    - text: "Geometry Outstanding Assignment PLACEHOLDER"
+  - custom: "Geometry Outstanding Assignment PLACEHOLDER"
+  utter_assignments_all_good:
+  - custom: "You aren't missing any assignments in this class :-)"
   utter_assignments_missing_1:
-    - text: "You have two missing assignments in two classes. Which would you like to know about? /n /n * Spanish \n * Geometry "
+  - custom: "You have two missing assignments in two classes. Which would you like to know about? /n /n * Spanish \n * Geometry "
   utter_assignments_missing_spanish_2:
-    - text: "Spanish Class:  Quiz 1 Study Guide  Due Date: 2 Days ago. \n There is a note attached to this assignment from your teacher. Would you like to read it?"
+  - custom: "Spanish Class:  Quiz 1 Study Guide  Due Date: 2 Days ago. \n There is a note attached to this assignment from your teacher. Would you like to read it?"
   utter_assignments_missing_spanish_note_2a:
-    - text: "Note from Ms. Ramirez: \n \n \"Remember, the late policy is -10 points per day! Consider using a homework pass for this :-( \" "
+  - custom: "Note from Ms. Ramirez: \n \n \"Remember, the late policy is -10 points per day! Consider using a homework pass for this :-( \" "
   utter_assignments_missing_geometry_3:
-    - text: "Geometry Class: open notes pop-quiz. Due Date: 4 days ago.  \n There is a note attached to this assignment from your teacher. Would you like to read it?"
+  - custom: "Geometry Class: open notes pop-quiz. Due Date: 4 days ago.  \n There is a note attached to this assignment from your teacher. Would you like to read it?"
   utter_assignments_missing_geometry_note_3a:
-    - text: "Note from Mr. Lipscomb: \"Excused absence on the day we took this--I can excuse you from this, or let you take it after school if you want to take it to try and help your grade. Let me know either way. - Mr. L\"  "
+  - custom: "Note from Mr. Lipscomb: \"Excused absence on the day we took this--I can excuse you from this, or let you take it after school if you want to take it to try and help your grade. Let me know either way. - Mr. L\"  "
   utter_grades_overall_1:
-    - text: "You currently have the following grades in each class: \n  \n * English 2: 88.2% B \n * Geometry 89.1% B \n * History 96% A \n * Spanish 78.3% C"
+  - custom: "You currently have the following grades in each class: \n  \n * English 2: 88.2% B \n * Geometry 89.1% B \n * History 96% A \n * Spanish 78.3% C"
   utter_grades_class_more_info_2:
-    - text: "Do you want more detailed grades information for any of your classes?"
+  - custom: "Do you want more detailed grades information for any of your classes?"
   utter_grades_class_more_info_which_class_3:
-    - text: "Which class do you want to know more about? \n \n * English \n * Geometry \n * History \n * Spanish "
+  - custom: "Which class do you want to know more about? \n \n * English \n * Geometry \n * History \n * Spanish"
   utter_grades_english_more_info_4a:
-    - text : "English grades more info PLACEHOLDER"
+  - text : "English grades more info PLACEHOLDER"
   utter_grades_geometry_more_info_4b:
-    - text: "Geometry grades more info PLACEHOLDER"
+  - custom: "Geometry grades more info PLACEHOLDER"
   utter_grades_history_more_info_4c:
-    - text: "History grades more info PLACEHOLDER"
+  - custom: "History grades more info PLACEHOLDER"
   utter_grades_spanish_more_info_4d:
-    - text: "Spanish grades more info PLACEHOLDER"
+  - custom: "Spanish grades more info PLACEHOLDER"
   utter_anything_else:
-    - text: " Can I do anything else for you?"
+  - custom: "Can I do anything else for you?"
