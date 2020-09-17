@@ -723,16 +723,56 @@
 - english class policies
 - english class info
 
+## intent:inquire_calendar
+
+## intent:inquire_calendar_spanish
+
+## intent:inquire_calendar_history
+
+## intent:inquire_calendar_geometry
+
+## intent:inquire_calendar_english
+
+## intent:inform_school
+
+## intent:inquire_calendar_school
+
+## intent:inform_extracurriculars
+
+## intent:inquire_calendar_extracurriculars
+
+## intent:inform_exam
+
+## intent:inquire_exam
+
+## intent:inquire_exam_spanish
+
+## intent:inquire_exam_history
+
+## intent:inquire_exam_geometry
+- Next math exam
+- When’s my next math exam?
+
+## intent:inquire_exam_english
+
 ## intent:inquire_class_info
 - What’s my teachers name
 
-## intent:inquire_email_teacher
-- Email Ms. Ramirez
-- I need help with quadratic equations
+## intent:inquire_class_info_spanish
 
-## intent:inquire_calendar
-- Next math exam
-- When’s my next math exam?
+## intent:inquire_class_info_history
+
+## intent:inquire_class_info_geometry
+
+## intent:inquire_class_info_english
+
+## intent:inquire_message_leave
+
+## intent:inquire_message_read
+
+
+
+
 
 
 
