@@ -38,81 +38,6 @@
 - what information do you have
 - what info can you give me
 
-## intent:inquire_assignments
-- what assignments are due soon
-- are there any outstanding assignments
-- upcoming due dates
-- due dates
-- show me my assignments
-- show me assignments
-- assignments
-- all assignments
-- outstanding assignments
-- what haven't i turned in yet
-
-## intent:inquire_grades
-- what is my grade
-- what are my grades in class
-- how am I doing in class
-- tell me my grade on the last assignment
-- i want to hear my grade
-- show me my scores
-- what is my GPA
-- is my grade better
-- did my grade get worse
-- do I have an A in this class
-- GPA
-- grade point avg
-- test scores
-- project scores
-- project grade
-- what is my class avg
-- what is my grade in the class
-- how did I do on the test
-- show me my recent grades
-- how am i doing in class right now
-- tell me my grades
-- I have a question about grades
-- grades
-- scores
-- grade point average
-- am I passing this class
-- What are my grades?
-- Grades
-- What is my gpa?
-- What did I get on my last hw
-- grades
-- What are my grades
-
-##intent:inquire_hw
-- homework due date
-- when do i have to turn hw in
-- when is hw due
-- due date for hw
-- did we have any homework
-- what is the hw for tonight
-- show me today's homework
-- what page is the hw on
-- do we have any homework
-- what am I supposed to read tonight
-- Did she give us hw
-- did he give us hw
-- Does tonight's hw have to do with the project
-- what's the hw
-- Help me with my math homework
-- Wut da hw?
-
-##intent:inquire_project
-- project due date
-- what day is the project due
-- due date for project
-- tell me about the class project
-- what do i have to do for the project
-- do we have a project coming up
-- project details
-- project specs
-- tell me about the project
-
 ## intent:goodbye
 - bye
 - goodbye
@@ -201,6 +126,25 @@
 - class policies
 - class info
 
+## intent: inform_documents
+- download documents
+- I need another copy of a document
+- can you send me a file
+- i need a file
+- i need a document
+- documents
+- class files
+- docs please!
+- documents
+- documents please
+- docs, plz
+- docs pls
+- I lost a paper
+- i lost my paper
+- i need another copy of a file
+- can you give me another copy of a file
+- I lost a document. Can you give me another copy
+
 ##intent:inform_hw
 - homework
 - hw
@@ -267,6 +211,24 @@
 - due dates spreadsheet, plz
 - due dates spreadsheet, pls
 
+##intent:inquire_hw
+- homework due date
+- when do i have to turn hw in
+- when is hw due
+- due date for hw
+- did we have any homework
+- what is the hw for tonight
+- show me today's homework
+- what page is the hw on
+- do we have any homework
+- what am I supposed to read tonight
+- Did she give us hw
+- did he give us hw
+- Does tonight's hw have to do with the project
+- what's the hw
+- Help me with my math homework
+- Wut da hw?
+
 ##intent:inquire_spanish_hw
 - spanish hw
 - did I have any hw in spanish class
@@ -319,7 +281,18 @@
 - whats the hw for history class
 - whats the homework for history
 
-##intent:inquire_spanish_project
+##intent:inquire_project
+- project due date
+- what day is the project due
+- due date for project
+- tell me about the class project
+- what do i have to do for the project
+- do we have a project coming up
+- project details
+- project specs
+- tell me about the project
+
+##intent:inquire_project_spanish
 - spanish project
 - spanish project details
 - tell me about the spanish project
@@ -333,21 +306,21 @@
 - I'd like the project for spanish, pls
  I'd like the project sheet for spanish, plz
  
- ##intent:inquire_history_project
-- history project
-- history project details
-- tell me about the history project
-- tell me about the project for history class
-- do I have a project in history
-- do I have a project in history class
-- what is the history project
-- project for history
-- project for history class
-- I'd like the project sheet for history class, please
-- I'd like the project for history, pls
- I'd like the project sheet for history, plz
-
-##intent:inquire_english_project
+##intent:inquire_project_geometry
+- geometry project
+- geometry project details
+- tell me about the geometry project
+- tell me about the project for geometry class
+- do I have a project in geometry
+- do I have a project in geometry class
+- what is the geometry project
+- project for geometry
+- project for geometry class
+- I'd like the project sheet for geometry class, please
+- I'd like the project for geometry, pls
+ I'd like the project sheet for geometry, plz
+ 
+ ##intent:inquire_project_english
 - english project
 - english project details
 - tell me about the english project
@@ -361,19 +334,19 @@
 - I'd like the project for english, pls
  I'd like the project sheet for english, plz
  
- ##intent:inquire_geometry_project
-- geometry project
-- geometry project details
-- tell me about the geometry project
-- tell me about the project for geometry class
-- do I have a project in geometry
-- do I have a project in geometry class
-- what is the geometry project
-- project for geometry
-- project for geometry class
-- I'd like the project sheet for geometry class, please
-- I'd like the project for geometry, pls
- I'd like the project sheet for geometry, plz
+ ##intent:inquire_project_history
+- history project
+- history project details
+- tell me about the history project
+- tell me about the project for history class
+- do I have a project in history
+- do I have a project in history class
+- what is the history project
+- project for history
+- project for history class
+- I'd like the project sheet for history class, please
+- I'd like the project for history, pls
+ I'd like the project sheet for history, plz
 
 ## intent:inquire_missing_assignments
 - Missing work
@@ -462,6 +435,19 @@
 - do I have any missing grades in history
 - tell me about the assignments im missing in history
 
+
+## intent:inquire_assignments
+- what assignments are due soon
+- are there any outstanding assignments
+- upcoming due dates
+- due dates
+- show me my assignments
+- show me assignments
+- assignments
+- all assignments
+- outstanding assignments
+- what haven't i turned in yet
+
 ##intent:inquire_assignments_history
 - history assignments
 - history all assignments
@@ -534,6 +520,40 @@
 - geometry what assignments 
 - geometry show assignments 
 
+## intent:inquire_grades
+- what is my grade
+- what are my grades in class
+- how am I doing in class
+- tell me my grade on the last assignment
+- i want to hear my grade
+- show me my scores
+- what is my GPA
+- is my grade better
+- did my grade get worse
+- do I have an A in this class
+- GPA
+- grade point avg
+- test scores
+- project scores
+- project grade
+- what is my class avg
+- what is my grade in the class
+- how did I do on the test
+- show me my recent grades
+- how am i doing in class right now
+- tell me my grades
+- I have a question about grades
+- grades
+- scores
+- grade point average
+- am I passing this class
+- What are my grades?
+- Grades
+- What is my gpa?
+- What did I get on my last hw
+- grades
+- What are my grades
+
 ## intent:inquire_grade_spanish
 - Yes, detailed grades on Spanish
 - What’s my Spanish grade?
@@ -604,7 +624,7 @@
 - history grades pls
 - grade in history class plz
 
-##intent:inquire_spanish_documents
+##intent:inquire_documents_spanish
 - spanish class documents
 - spanish documents
 - i need another copy of the hw from spanish
@@ -620,7 +640,7 @@
 - can you give me copies of something from spanish class
 - spanish docs
 
-##intent:inquire_history_documents
+##intent:inquire_documents_history
 - history class documents
 - history documents
 - i need another copy of the hw from history
@@ -636,7 +656,7 @@
 - can you give me copies of something from history class
 - history docs
 
-##intent:inquire_geometry_documents
+##intent:inquire_documents_geometry
 - geometry class documents
 - geometry documents
 - i need another copy of the hw from geometry
@@ -652,7 +672,7 @@
 - can you give me copies of something from geometry class
 - geometry docs
 
-##intent:inquire_english_documents
+##intent:inquire_documents_english
 - english class documents
 - english documents
 - i need another copy of the hw from english
@@ -667,7 +687,7 @@
 - please send me another copy of the file from english class
 - can you give me copies of something from english class
 
-##intent:inquire_spanish_syllabus
+##intent:inquire_syllabus_spanish
 - syllabus spanish
 - spanish syllabus
 - show me the syllabus for spanish
@@ -676,7 +696,7 @@
 - spanish class policies
 - spanish class info
 
-##intent:inquire_history_syllabus
+##intent:inquire_syllabus_history
 - syllabus history
 - history syllabus
 - show me the syllabus for history
@@ -685,7 +705,7 @@
 - history class policies
 - history class info
 
-##intent:inquire_geometry_syllabus
+##intent:inquire_syllabus_geometry
 - syllabus geometry
 - geometry syllabus
 - show me the syllabus for geometry
@@ -694,7 +714,7 @@
 - geometry class policies
 - geometry class info
 
-##intent:inquire_english_syllabus
+##intent:inquire_syllabus_english
 - syllabus english
 - english syllabus
 - show me the syllabus for english
@@ -702,25 +722,6 @@
 - download syllabus for english class
 - english class policies
 - english class info
-
-## intent: inform_documents
-- download documents
-- I need another copy of a document
-- can you send me a file
-- i need a file
-- i need a document
-- documents
-- class files
-- docs please!
-- documents
-- documents please
-- docs, plz
-- docs pls
-- I lost a paper
-- i lost my paper
-- i need another copy of a file
-- can you give me another copy of a file
-- I lost a document. Can you give me another copy
 
 ## intent:inquire_class_info
 - What’s my teachers name
