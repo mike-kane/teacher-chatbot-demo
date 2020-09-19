@@ -244,17 +244,17 @@ responses:
   utter_anything_else:
   - text: "Can I do anything else for you?"
   utter_class_info_english_overall:
-  - text: ""
+  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there something specific I can tell you about your class?"
   utter_class_info_spanish_overall:
-  - text: ""
+  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there something specific I can tell you about your class?"
   utter_class_info_history_overall:
-  - text: ""
+  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there something specific I can tell you about your class?"
   utter_class_info_geometry_overall:
-  - text: ""
+  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there something specific I can tell you about your class?"
   utter_class_info_details_choices:
-  - text: ""
+  - text: "What would you like to know about?  \n \n  * Class Calendar \n * Homework \n * Exams \n  * Grades \n * Assignments \n * Documents "
   utter_calendar_week_overview:
-  - text: ""
+  - text: "Here's what your week looks like: \n \n * "
   utter_calendar_more_info_choices:
   - text: ""
   utter_calendar_school:
