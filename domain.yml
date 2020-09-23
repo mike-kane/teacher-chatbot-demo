@@ -254,38 +254,44 @@ responses:
   utter_class_info_details_choices:
   - text: "What would you like to know about?  \n \n  * Class Calendar \n * Homework \n * Exams \n  * Grades \n * Assignments \n * Documents "
   utter_calendar_week_overview:
-  - text: "Here's what your week looks like: \n \n * "
+  - text: "Here's what your week looks like: \n \n * Monday:  {} \n * Tuesday:  {} \n * Wednesday:  {} \n * Thursday:  {} \n * Friday:  {} I can also tell you calendar details for specific classes, sports, clubs, etc. Is there something specific you'd like to know?"
   utter_calendar_more_info_choices:
-  - text: ""
+  - text: "I can give you calendar info on the following choices: \n \n * School Calendar \n * Soccer \n * Spanish Club \n * English Class \n * Geometry Class \n * History Class \n * Spanish Class"
   utter_calendar_school:
-  - text: ""
+  - text: "Here are the upcoming events on the School Calendar:  \n \n * {} \n * {} \n * {} "
   utter_calendar_soccer:
-  - text: ""
+  - text: "Here are the upcoming events on your Soccer Calendar:  \n \n * {} \n * {} \n * {}"
   utter_calendar_extracurriculars:
-  - text: ""
+  - text: "Here are the upcoming events on your Extracurriculars Calendar:  \n \n * {} \n * {} \n * {}"
   utter_calendar_spanish:
-  - text: ""
+  - text: "Here are the upcoming events on your Spanish Class Calendar:  \n \n * {} \n * {} \n * {}"
   utter_calendar_english:
-  - text: ""
+  - text: "Here are the upcoming events on your English Class Calendar:  \n \n * {} \n * {} \n * {}"
   utter_calendar_history:
-  - text: ""
+  - text: "Here are the upcoming events on your History Class Calendar:  \n \n * {} \n * {} \n * {}"
   utter_calendar_geometry:
-  - text: ""
+  - text: "Here are the upcoming events on your Geometry Class Calendar:  \n \n * {} \n * {} \n * {}"
   utter_calendar_exams:
-  - text: ""
+  - text: "Here are the upcoming exams on your calendar:  \n \n * {} \n * {} \n * {}"
   utter_exam_spanish:
-  - text: ""
+  - text: "Here's the info on your next Spanish Exam:  \n \n * Date \n * Chapters \n * Note From Teacher: "
   utter_exam_english:
-  - text: ""
+  - text: "Here's the info on your next English Exam:  \n \n * Date \n * Chapters \n * Note From Teacher: "
   utter_exam_geometry:
-  - text: ""
+  - text: "Here's the info on your next Geometry Exam:  \n \n * Date \n * Chapters \n * Note From Teacher: "
   utter_exam_history:
-  - text: ""
+  - text: "Your history class doesn't have any exams scheduled, currently"
   utter_message_which_recipient:
-  - text: ""
+  - text: "I can send a message for you.  Who would you like to send it to?  \n \n * Ms. Ramirez (Spanish Class) \n * Mr. Lipscomb (Geometry Class) \n * Mrs. Patillo (History Class)  \n * Mr. Kane (English Class) \n * Coach Long (Soccer) \n * Spanish Club Members \n * Administration (Principal Smith)"
   utter_message_what_message:
-  - text: ""
+  - text: "Okay, what message would you like me to send?"
   utter_message_sent:
-  - text: ""
+  - text: "Okay, sent!"
   utter_message_check_messages_summary:
-  - text: ""
+  - text: "You have 3 messages:"
+  utter_message_check_message_1:
+  - text: "*Message 1* \n * From: School Messaging System \n * Message: \"Reminder that t\n here is a half day this wednesday for a scheduled teacher inservice. School will be released at 12:20pm. Teachers, please be in the cafeteria for training by 1:30 pm\""
+  utter_message_check_message_2:
+  - text: "*Message 2* \n * From: Mr. Lipscomb \n * Message: \"There is a mistake on tonights hw description, please only complete the odd numbers! I'll correct this on my class website when I get home, just sending this out so that everyone sees it before they get started.\""
+  utter_message_check_message_3:
+  - text: "*Message 3* \n * From: Coach Long \n * Message: \"I just got a notification that you're missing an assignment in spanish class! Please see me before practice today, this assignment needs to be turned in before you can participate\""
