@@ -950,3 +950,93 @@
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
   
+## inquire class info + inform spanish + Deny
+* inquire_class_info
+  - utter_which_class
+* inform_spanish
+  - utter_class_info_spanish_overall
+* deny
+
+## inquire class info + inform english + Deny + goodbye
+* inquire_class_info
+  - utter_which_class
+* inform_english
+  - utter_class_info_english_overall
+* deny
+
+## inquire class info + inform history + Deny + goodbye
+* inquire_class_info
+  - utter_which_class
+* inform_history
+  - utter_class_info_history_overall
+* deny
+
+## inquire class info + inform geometry + Deny + goodbye
+  * inquire_class_info
+  - utter_which_class
+* inform_geometry
+  - utter_class_info_geometry_overall
+* deny
+
+## inquire class info + inform spanish + affirm + class info details choices
+* inquire_class_info
+  - utter_which_class
+* inform_spanish
+  - utter_class_info_spanish_overall
+* affirm
+  - utter_class_info_details_choices
+  
+## inquire class info + inform english + affirm + class info details choices
+* inquire_class_info
+  - utter_which_class
+* inform_english
+  - utter_class_info_english_overall
+* affirm
+  - utter_class_info_details_choices
+  
+## inquire class info + inform history + affirm + class info details choices
+* inquire_class_info
+  - utter_which_class
+* inform_history
+  - utter_class_info_history_overall
+* affirm
+  - utter_class_info_details_choices
+  
+## inquire class info + inform geometry + affirm + class info details choices
+* inquire_class_info
+  - utter_which_class
+* inform_geometry
+  - utter_class_info_geometry_overall
+* affirm
+  - utter_class_info_details_choices
+
+## inquire class info spanish + utter class info spanish overall + affirm + utter class info details choices
+* inquire_class_info_spanish
+  - utter_class_info_spanish_overall
+* affirm
+  - utter_class_info_details_choices
+
+## inquire class info english + utter class info {} overall + affirm + utter class info details choices
+* inquire_class_info_english
+  - utter_class_info_english_overall
+* affirm
+  - utter_class_info_details_choices
+  
+## inquire class info history + utter class info {} overall + affirm + utter class info details choices
+* inquire_class_info_history
+  - utter_class_info_history_overall
+* affirm
+  - utter_class_info_details_choices
+  
+## inquire class info geometry + utter class info {} overall + affirm + utter class info details choices
+* inquire_class_info_geometry
+  - utter_class_info_geometry_overall
+* affirm
+  - utter_class_info_details_choices
+  
+***TODO: COMPLETE MESSAGING WORKFLOW***
+
+
+
+
+***TODO: COMPLETE CALENDAR WORKFLOW***
