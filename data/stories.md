@@ -1036,7 +1036,25 @@
   
 ***TODO: COMPLETE MESSAGING WORKFLOW***
 
+## inquire message read 
+* inquire_message_read
+  - utter_check_messages_summary
+  - utter_message_check_message_1
+  - utter_message_check_message_2
+  - utter_message_check_message_3
 
+## inquire message read + inquire message leave + which recipient + inform_ soccer +
+* inquire_message_read
+  - utter_check_messages_summary
+  - utter_message_check_message_1
+  - utter_message_check_message_2
+  - utter_message_check_message_3
+* inquire_message_leave
+  - utter_message_which_recipient
+* inform_coach
+  - utter_what_message
+* inform{"message": "I turned it in"}
+  - utter_message_sent
 
 
 ***TODO: COMPLETE CALENDAR WORKFLOW***

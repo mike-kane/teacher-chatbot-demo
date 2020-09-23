@@ -78,6 +78,10 @@ intents:
 - inquire_message_read
 - inform_coach
 
+slots:
+  message:
+    type: text
+
 responses:
   utter_greet:
   - text: "Hi!"
