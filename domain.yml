@@ -282,7 +282,7 @@ responses:
   utter_exam_history:
   - text: "Your history class doesn't have any exams scheduled, currently"
   utter_message_which_recipient:
-  - text: "I can send a message for you.  Who would you like to send it to?  \n \n * Ms. Ramirez (Spanish Class) \n * Mr. Lipscomb (Geometry Class) \n * Mrs. Patillo (History Class)  \n * Mr. Kane (English Class) \n * Coach Long (Soccer) \n * Spanish Club Members \n * Administration (Principal Smith)"
+  - text: "I can send a message for you.  Who would you like to send it to?  \n \n * Ms. Ramirez (Spanish Teacher) \n * Mr. Lipscomb (Geometry Teacher) \n * Mrs. Patillo (History Teacher)  \n * Mr. Kane (English Teacher) \n * Coach Long (Soccer) \n * Spanish Club Members \n * Administration (Principal Smith)"
   utter_message_what_message:
   - text: "Okay, what message would you like me to send?"
   utter_message_sent:
