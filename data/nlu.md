@@ -724,51 +724,233 @@
 - english class info
 
 ## intent:inquire_calendar
+- What's my week look like
+- What's my schedule
+- calendar
+- show me my calendar
+- show me the schedule for this week
+- Can you tell me about what I'll be doing in classes this week
+- what will I be doing today
+- Important dates
 
 ## intent:inquire_calendar_spanish
+- spanish calendar
+- show me important events for spanish class
+- show me my spanish calendar
+- what are we doing in spanish this week
+- what are we doing in spanish class today
+- what are we doing in spanish today
+- are we doing anything cool in spanish this week
+- please show me any scheduled events for spanish 
+- what does ms ramirez have us doing this week
+- tell me about what spanish class is doing this week
 
 ## intent:inquire_calendar_history
+- history calendar
+- show me important events for history class
+- show me my history calendar
+- what are we doing in history this week
+- what are we doing in history class today
+- what are we doing in history today
+- are we doing anything cool in history this week
+- please show me any scheduled events for history 
+- what does ms patillo have us doing this week
+- tell me about what history class is doing this week
 
 ## intent:inquire_calendar_geometry
+- geometry calendar
+- show me important events for geometry class
+- show me my geometry calendar
+- what are we doing in geometry this week
+- what are we doing in geometry class today
+- what are we doing in geometry today
+- are we doing anything cool in geometry this week
+- please show me any scheduled events for geometry 
+- what does mr lipscomb have us doing this week
+- tell me about what geometry class is doing this week
 
 ## intent:inquire_calendar_english
+- english calendar
+- show me important events for english class
+- show me my english calendar
+- what are we doing in english this week
+- what are we doing in english class today
+- what are we doing in english today
+- are we doing anything cool in english this week
+- please show me any scheduled events for english 
+- what does mr Kane have us doing this week
+- tell me about what english class is doing this week
 
 ## intent:inform_school
+- school 
+- school, plz
+- school, please
+- admin
+- principal smith
+- the principal
+- the school
 
 ## intent:inquire_calendar_school
+- School calendar
+- Let's see the school calendar
+- Show me the school calendar
+- Do we have any half days
+- When is the next day off
+- when is the next holiday
+- show me the all-school calendar 
 
 ## intent:inform_extracurriculars
+- spanish club
+- extracurriculars
+- soccer
+- soccer, please
+- show me soccer
+- show me spanish club
+- show me extracurriculars
 
 ## intent:inquire_calendar_extracurriculars
+- When is my next soccer game
+- when is the next spanish club meeting
+- spanish club calendar
+- soccer calendar
+- soccer schedule
+- spanish club schedule
+- show me the next soccer game
+- show me the next spanish club meeting
+- do I have any soccer games?
+- when is soccer practice
 
 ## intent:inform_exam
+- exams
+- exam
+- test
+- tests
+- quizzes
+- exams, please
+- tests, please
+- show me exams
+- show me tests
 
 ## intent:inquire_exam
+- when is the next test
+- when is the next exam
+- show me the next exam
+- show me the next test
+- I have a question about exams
+- I have a question about tests
+- do I have any tests this week
+- do I have any exams this week
 
 ## intent:inquire_exam_spanish
+- when is the next spanish test
+- when is the spanish exam
+- spanish test
+- next spanish exam
+- when's my next spanish exam?
+- show me when the next spanish test is
+- spanish exam
 
 ## intent:inquire_exam_history
+- when is the next history test
+- when is the history exam
+- history test
+- next history exam
+- when's my next history exam?
+- show me when the next history test is
+- history exam
 
 ## intent:inquire_exam_geometry
-- Next math exam
-- When’s my next math exam?
+- when is the next geometry test
+- when is the geometry exam
+- geometry test
+- next geometry exam
+- when's my next geometry exam?
+- show me when the next geometry test is
+- geometry exam
 
 ## intent:inquire_exam_english
+- when is the next english test
+- when is the english exam
+- english test
+- next english exam
+- when's my next english exam?
+- show me when the next english test is
+- english exam
 
 ## intent:inquire_class_info
 - What’s my teachers name
+- tell me about my classes
+- tell me about my class
+- what classes do I have
+- give me info on my classes
+- I need information on my classes
+- What is my teacher's email 
+- Tell me about my classes
+- I have questions about my classes
+- class info
 
 ## intent:inquire_class_info_spanish
+- what is my spanish teacher's name
+- tell me about my spanish class
+- spanish class info
+- give me information on my spanish class
+- I have questions about spanish
+- what is ms ramirez's email
+- spanish class contact info
+- I have questions about my spanish class 
 
 ## intent:inquire_class_info_history
+- what is my history teacher's name
+- tell me about my history class
+- history class info
+- give me information on my history class
+- I have questions about history
+- what is ms patillo's email
+- history class contact info
+- I have questions about my history class 
 
 ## intent:inquire_class_info_geometry
+- what is my geometry teacher's name
+- tell me about my geometry class
+- geometry class info
+- give me information on my geometry class
+- I have questions about geometry
+- what is mr lipscomb's email
+- geometry class contact info
+- I have questions about my geometry class 
 
 ## intent:inquire_class_info_english
+- what is my english teacher's name
+- tell me about my english class
+- english class info
+- give me information on my english class
+- I have questions about english
+- what is mr kane's email
+- english class contact info
+- I have questions about my english class 
 
 ## intent:inquire_message_leave
+- I need to send a message
+- I'd like to send a message to a teacher
+- leave a message for my teacher
+- send message
+- leave a message for someone
+- I would like to leave a message for someone, please
+- I need to send a note to my teacher
+- send message to spanish club
+- broadcast message to spanish club
+- message spanish coach
 
 ## intent:inquire_message_read
+- Do i have any messages
+- do I have any new messages
+- check msgs
+- check messages
+- do I have any msgs
+- msgs
+- Has anyone left a message for me
+- any new messages
+- any new msgs
 
 
 
