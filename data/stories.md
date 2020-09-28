@@ -1058,3 +1058,8 @@
 
 
 ***TODO: COMPLETE CALENDAR WORKFLOW***
+
+## inquire calendar + utter calendar week overview + utter calendar more choices + inform school + utter calendar school 
+
+## inquire calendar + utter calendar week overview + utter calendar more choices + inform extracurriculars + utter calendar soccer
+
