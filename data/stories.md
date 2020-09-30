@@ -1061,5 +1061,32 @@
 
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform school + utter calendar school 
 
-## inquire calendar + utter calendar week overview + utter calendar more choices + inform extracurriculars + utter calendar soccer
 
+## inquire calendar + utter calendar week overview + utter calendar more choices + inform extracurriculars + utter calendar soccer + utter calendar spanish club
+
+
+## inquire calendar + utter calendar week overview + utter calendar more choices + inform spanish + utter calendar spanish
+
+
+## inquire calendar + utter calendar week overview + utter calendar more choices + inform geometry + utter calendar geometry
+
+
+## inquire calendar + utter calendar week overview + utter calendar more choices + inform history + utter calendar history
+
+
+## inquire calendar + utter calendar week overview + utter calendar more choices + inform english + utter calendar english
+
+
+## inquire calendar + utter calendar week overview + utter calendar more choices  + inform exams + utter exam spanish + utter exam geometry + utter exam history + utter exam english
+
+
+## inquire exam spanish  + utter exam spanish
+
+
+## inquire exam history  + utter exam history
+
+
+## inquire exam geometry  + utter exam geometry
+
+
+## inquire exam english  + utter exam english
