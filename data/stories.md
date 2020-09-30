@@ -1033,8 +1033,6 @@
   - utter_class_info_geometry_overall
 * affirm
   - utter_class_info_details_choices
-  
-***TODO: COMPLETE MESSAGING WORKFLOW***
 
 ## inquire message read 
 * inquire_message_read
@@ -1042,6 +1040,8 @@
   - utter_message_check_message_1
   - utter_message_check_message_2
   - utter_message_check_message_3
+
+***TODO: COMPLETE MESSAGING WORKFLOW  (next intent needs to be updated)***
 
 ## inquire message read + inquire message leave + which recipient + inform_ soccer +
 * inquire_message_read
@@ -1056,37 +1056,109 @@
 * inform{"message": "I turned it in"}
   - utter_message_sent
 
-
-***TODO: COMPLETE CALENDAR WORKFLOW***
-
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform school + utter calendar school 
-
+* inquire_calendar
+  - utter_calendar_week_overview
+  - utter_calendar_more_info_choices
+* inform_calendar_school
+  - utter_calendar_school
 
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform extracurriculars + utter calendar soccer + utter calendar spanish club
+* inquire_calendar
+  - utter_calendar_week_overview
+  - utter_calendar_more_info_choices
+* inquire_calendar_extracurriculars
+  - utter_calendar_soccer
+  -utter_calendar_spanish_club
+  
+## inquire calendar soccer + utter calendar soccer
+* inquire_calendar_soccer
+  - utter_calendar_soccer
 
+## inquire calendar clubs + utter calendar clubs
+* inquire_calendar_clubs
+  - utter_calendar_spanish_club
+
+## inquire calendar extracurriculars + utter calendar soccer  + utter calendar spanish club
+* inquire_calendar_extracurriculars
+  - utter_calendar_soccer
+  - utter_calendar_spanish_club
 
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform spanish + utter calendar spanish
-
+* inquire_calendar
+  - utter_calendar_week_overview
+  - utter_calendar_more_info_choices
+* inform_spanish
+  - utter_calendar_spanish
 
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform geometry + utter calendar geometry
-
-
+* inquire_calendar
+  - utter_calendar_week_overview
+  - utter_calendar_more_info_choices
+* inform_geometry
+  - utter_calendar_geometry
+  
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform history + utter calendar history
-
-
+* inquire_calendar
+  - utter_calendar_week_overview
+  - utter_calendar_more_info_choices
+* inform_history
+  - utter_calendar_history
+  
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform english + utter calendar english
-
-
+* inquire_calendar
+  - utter_calendar_week_overview
+  - utter_calendar_more_info_choices
+* inform_english
+  - utter_calendar_english
+  
 ## inquire calendar + utter calendar week overview + utter calendar more choices  + inform exams + utter exam spanish + utter exam geometry + utter exam history + utter exam english
-
-
+* inquire_calendar
+  - utter_calendar_week_overview
+  - utter_calendar_more_info_choices
+* inquire_exam
+  - utter_calendar_exams
+  - utter_exam_spanish
+  - utter_exam_geometry
+  - utter_exam_history
+  - utter_exam_english
+  
+## inquire calendar spanish + utter calendar spanish
+* inquire_calendar_spanish
+  - utter_calendar_spanish
+  
+## inquire calendar geometry + utter calendar geometry
+* inquire_calendar_geometry
+  - utter_calendar_geometry
+  
+## inquire calendar history + utter calendar history
+* inquire_calendar_history
+  - utter_calendar_history
+  
+## inquire calendar english + utter calendar english 
+* inquire_calendar_english
+  - utter_calendar_english
+  
+## inquire exam + utter calendar exams + utter exam spanish + utter exam history + utter exam geometry + utter exam english
+* inquire_exam
+  - utter_calendar_exams
+  - utter_exam_spanish
+  - utter_exam_history
+  - utter_exam_geometry
+  - utter_exam_english
+  
 ## inquire exam spanish  + utter exam spanish
-
+* inquire_exam_spanish
+  - utter_exam_spanish
 
 ## inquire exam history  + utter exam history
-
+* inquire_exam_history
+  - utter_exam_history
 
 ## inquire exam geometry  + utter exam geometry
-
+* inquire_exam_geometry
+  - utter_exam_geometry
 
 ## inquire exam english  + utter exam english
+* inquire_exam_english
+  - utter_exam_english
