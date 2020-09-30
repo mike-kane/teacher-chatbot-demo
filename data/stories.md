@@ -1043,6 +1043,71 @@
 
 ***TODO: COMPLETE MESSAGING WORKFLOW  (next intent needs to be updated)***
 
+## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message (set slot message) + utter message sent
+* inquire_leave_message
+  - utter_message_which_recipient
+* inform{"recipient":"Coach Long"}
+* slot("recipient":"coach")
+  - utter_message_what_message
+* inform{"message":"this is my message"}
+  - utter_message_sent
+
+## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message (set slot message) + utter message sent
+* inquire_leave_message
+  - utter_message_which_recipient
+* inform("recipient":"coach")
+* slot("recipient":"coach")
+  - utter_message_what_message
+* inform("message":"this is my message")
+  - utter_message_sent
+  
+## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message (set slot message) + utter message sent
+* inquire_leave_message
+  - utter_message_which_recipient
+* inform("recipient":"coach")
+* slot("recipient":"coach")
+  - utter_message_what_message
+* inform("message":"this is my message")
+  - utter_message_sent
+  
+## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message (set slot message) + utter message sent
+* inquire_leave_message
+  - utter_message_which_recipient
+* inform("recipient":"coach")
+* slot("recipient":"coach")
+  - utter_message_what_message
+* inform("message":"this is my message")
+  - utter_message_sent
+  
+## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message (set slot message) + utter message sent
+* inquire_leave_message
+  - utter_message_which_recipient
+* inform("recipient":"coach")
+* slot("recipient":"coach")
+  - utter_message_what_message
+* inform("message":"this is my message")
+  - utter_message_sent
+  
+## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message (set slot message) + utter message sent
+* inquire_leave_message
+  - utter_message_which_recipient
+* inform("recipient":"coach")
+* slot("recipient":"coach")
+  - utter_message_what_message
+* inform("message":"this is my message")
+  - utter_message_sent
+  
+## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message (set slot message) + utter message sent
+* inquire_leave_message
+  - utter_message_which_recipient
+* inform("recipient":"coach")
+* slot("recipient":"coach")
+  - utter_message_what_message
+* inform("message":"this is my message")
+  - utter_message_sent
+
+***TODO: COMPLETE READ MESSAGE AND RESPOND WORKFLOWS***
+
 ## inquire message read + inquire message leave + which recipient + inform_ soccer +
 * inquire_message_read
   - utter_check_messages_summary
@@ -1051,10 +1116,51 @@
   - utter_message_check_message_3
 * inquire_message_leave
   - utter_message_which_recipient
-* inform_coach
+* inform("recipient": "coach")
   - utter_what_message
 * inform{"message": "I turned it in"}
   - utter_message_sent
+  
+  ## inquire message read + inquire message leave + which recipient + inform geometry +
+* inquire_message_read
+  - utter_check_messages_summary
+  - utter_message_check_message_1
+  - utter_message_check_message_2
+  - utter_message_check_message_3
+* inquire_message_leave
+  - utter_message_which_recipient
+* inform("recipient": "coach")
+  - utter_what_message
+* inform{"message": "I turned it in"}
+  - utter_message_sent
+  
+  ## inquire message read + inquire message leave + which recipient + inform_ soccer +
+* inquire_message_read
+  - utter_check_messages_summary
+  - utter_message_check_message_1
+  - utter_message_check_message_2
+  - utter_message_check_message_3
+* inquire_message_leave
+  - utter_message_which_recipient
+* inform("recipient": "Coach Long")
+  - utter_what_message
+* inform{"message": "I turned it in"}
+  - utter_message_sent
+  
+  ## inquire message read + inquire message leave + which recipient + inform_ soccer +
+* inquire_message_read
+  - utter_check_messages_summary
+  - utter_message_check_message_1
+  - utter_message_check_message_2
+  - utter_message_check_message_3
+* inquire_message_leave
+  - utter_message_which_recipient
+* inform("recipient": "coach")
+  - utter_what_message
+* inform{"message": "I turned it in"}
+  - utter_message_sent
+  
+  
 
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform school + utter calendar school 
 * inquire_calendar
