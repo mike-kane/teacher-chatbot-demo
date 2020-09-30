@@ -101,7 +101,7 @@ entities:
 
 slots:
   message:
-    type: text
+    type: unfeaturized
   recipient:
     type: categorical
     values:
