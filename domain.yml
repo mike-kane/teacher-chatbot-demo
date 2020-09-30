@@ -89,18 +89,31 @@ intents:
 - inquire_english_project
 - inquire_geometry_hw
 - inquire_history_project
-- '**TODO: COMPLETE MESSAGING WORKFLOW***'
 - inquire_spanish_syllabus
 - inquire_geometry_project
-- '**TODO: COMPLETE CALENDAR WORKFLOW***'
 - inquire_calendar_school
+
+TODO: Update intents to reflect changes to NLU.md
+
 entities:
 - message
+- recipient
+
 slots:
   message:
     type: text
   recipient:
-    type: text
+    type: categorical
+    values:
+      - Coach Long
+      - Spanish Club Members
+      - Spanish Club Officers
+      - Mr. Kane
+      - Ms. Ramirez
+      - Mr. Lipscomb
+      - Mrs. Patillo
+      - Administration
+
 responses:
   utter_greet:
   - text: Hi!
@@ -147,15 +160,15 @@ responses:
   utter_hw_history:
   - text: 'History homework: None'
   utter_hw_hear_projects:
-  - text: You also have projects in two classes. Would you like to know about these
-      projects?
+  - text: "You also have projects in two classes. Would you like to know about these
+      projects?"
   utter_project_choices:
   - text: "You have two projects I can tell you about. Which one are you interested\
       \ in? \n Spanish or History?"
   utter_project_geometry:
-  - text: Your Geometry class doesn't have any projects listed, currently.
+  - text: "Your Geometry class doesn't have any projects listed, currently."
   utter_project_english:
-  - text: Your English class doesn't have any projects listed, currently.
+  - text: "Your English class doesn't have any projects listed, currently."
   utter_project_spanish:
   - text: "From Ms. Ramirez:  \"You and your group will create a skit using all of\
       \ this semester's vocab words in a conversation. See attached document for details.\"\
@@ -223,7 +236,7 @@ responses:
   - text: "You have the following assignments due in Geometry class: \n \n * Isoceles\
       \ Triangles quiz \t Due Date: Wednesday"
   utter_assignments_all_good:
-  - text: You aren't missing any assignments in this class :-)
+  - text: "You aren't missing any assignments in this class :-)"
   utter_assignments_missing_1:
   - text: "You have two missing assignments in two classes. Which would you like to\
       \ know about? /n /n * Spanish \n * Geometry "
@@ -246,7 +259,7 @@ responses:
   - text: "You currently have the following grades in each class: \n  \n * English\
       \ 2: 88.2% B \n * Geometry 89.1% B \n * History 96% A \n * Spanish 78.3% C"
   utter_grades_class_more_info_2:
-  - text: Do you want more detailed grades information for any of your classes?
+  - text: "Do you want more detailed grades information for any of your classes?"
   utter_grades_class_more_info_which_class_3:
   - text: "Which class do you want to know more about? \n \n * English \n * Geometry\
       \ \n * History \n * Spanish"
@@ -328,16 +341,30 @@ responses:
   - text: "Here's the info on your next Geometry Exam:  \n \n * Date \n * Chapters\
       \ \n * Note From Teacher: "
   utter_exam_history:
-  - text: Your history class doesn't have any exams scheduled, currently
+  - text: "Your history class doesn't have any exams scheduled, currently"
   utter_message_which_recipient:
-  - text: "I can send a message for you.  Who would you like to send it to?  \n \n\
-      \ * Ms. Ramirez (Spanish Teacher) \n * Mr. Lipscomb (Geometry Teacher) \n *\
-      \ Mrs. Patillo (History Teacher)  \n * Mr. Kane (English Teacher) \n * Coach\
-      \ Long (Soccer) \n * Spanish Club Members \n * Administration (Principal Smith)"
+  - text: "I can send a message for you.  Who would you like to send it to?"
+    buttons:
+    - title: "Coach Long (Soccer)"
+      payload: '/inform{"recipient":"Coach Long"}'
+    - title: "Spanish Club (All Members)"
+      payload: '/inform{"recipient":"Spanish Club Members"}'
+    - title: "Spanish Club Officers"
+      payload: '/inform{"recipient":"Spanish Club Officers"}'
+    - title: "Mr. Kane (English)"
+      payload: '/inform{"recipient":"Mr. Kane"}'
+    - title: "Ms. Ramirez (Spanish)"
+      payload: '/inform{"recipient":"Ms. Ramirez"}'
+    - title:  "Mr. Lipscomb (Geometry)"
+      payload: '/inform{"recipient":"Mr. Lipscomb"}'
+    - title: "Mrs. Patillo (History)"
+      payload: '/inform{"recipient":"Mrs. Patillo"}'
+    - title: "Administration (Principal Smith)"
+      payload: '/inform{"recipient":"Administration"}'
   utter_message_what_message:
-  - text: Okay, what message would you like me to send?
+  - text: "Okay, what message would you like me to send?"
   utter_message_sent:
-  - text: Okay, sent!
+  - text: "Okay, sent!"
   utter_message_check_messages_summary:
   - text: 'You have 3 messages:'
   utter_message_check_message_1:
@@ -347,7 +374,7 @@ responses:
       \ training by 1:30 pm\""
   utter_message_check_message_2:
   - text: "*Message 2* \n * From: Mr. Lipscomb \n * Message: \"There is a mistake\
-      \ on tonights hw description, please only complete the odd numbers! I'll correct\
+      \ on tonight's hw description, please only complete the odd numbers! I'll correct\
       \ this on my class website when I get home, just sending this out so that everyone\
       \ sees it before they get started.\""
   utter_message_check_message_3:
