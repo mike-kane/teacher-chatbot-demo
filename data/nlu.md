@@ -807,29 +807,46 @@
 - show me soccer
 - show me spanish club
 - show me extracurriculars
+- activities
+- after school activities
+- sports
+- tell me about sports
 
-## intent:inquire_calendar_extracurriculars
+## intent:inquire_calendar_soccer
 - When is my next soccer game
-- when is the next spanish club meeting
-- spanish club calendar
 - soccer calendar
 - soccer schedule
-- spanish club schedule
 - show me the next soccer game
-- show me the next spanish club meeting
 - do I have any soccer games?
 - when is soccer practice
+- do I have any sports practices or games
+- when is my next sports match
+- when is practice
 
-## intent:inform_exam
-- exams
-- exam
-- test
-- tests
-- quizzes
-- exams, please
-- tests, please
-- show me exams
-- show me tests
+## intent:inquire_calendar_clubs
+- club meetings
+- clubs
+- spanish club
+- do I have any club meetings
+- when is the next club meeting
+- when is spanish club
+- is spanish club meeting today
+- when is the next club meeting
+- am I in any clubs
+- when is the next spanish club meeting
+- spanish club calendar
+- spanish club schedule
+- show me the next spanish club meeting
+
+## intent:inquire_calendar_extracurriculars
+- what is my after school calendar like
+- what are my extracurriculars
+- extracurriculars, please
+- after school activities
+- after school activities, please
+- what are my after school obligations
+- sports and clubs
+- show me my week for after school activities
 
 ## intent:inquire_exam
 - when is the next test
@@ -840,6 +857,15 @@
 - I have a question about tests
 - do I have any tests this week
 - do I have any exams this week
+- exams
+- exam
+- test
+- tests
+- quizzes
+- exams, please
+- tests, please
+- show me exams
+- show me tests
 
 ## intent:inquire_exam_spanish
 - when is the next spanish test
