@@ -92,6 +92,7 @@ intents:
 - inquire_spanish_syllabus
 - inquire_geometry_project
 - inquire_calendar_school
+- inquire_calendar_clubs
 
 TODO: Update intents to reflect changes to NLU.md
 
@@ -313,8 +314,8 @@ responses:
   utter_calendar_soccer:
   - text: "Here are the upcoming events on your Soccer Calendar:  \n \n * {} \n *\
       \ {} \n * {}"
-  utter_calendar_extracurriculars:
-  - text: "Here are the upcoming events on your Extracurriculars Calendar:  \n \n\
+  utter_calendar_spanish_club:
+  - text: "Here are the upcoming events on your Spanish Club Calendar:  \n \n\
       \ * {} \n * {} \n * {}"
   utter_calendar_spanish:
   - text: "Here are the upcoming events on your Spanish Class Calendar:  \n \n * {}\
