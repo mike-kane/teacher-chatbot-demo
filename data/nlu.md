@@ -49,7 +49,7 @@
 - bye aida!
 - Thanks, bye!
 
-## intent: affirm
+## intent:affirm
 - yes
 - yes, please
 - ++
@@ -60,14 +60,13 @@
 - Yup!
 - yep
 - of course!
-- yes
 - Yes
 
-## intent: deny
+## intent:deny
 - no
 - that's a no from me
 - nope
-- n 
+- n
 - N
 - Not interested
 - Absolutely not
@@ -77,48 +76,47 @@
 - nah
 - maybe later
 
-##intent:affirm_many
+## intent:affirm_many
 - both
-- all 
+- all
 - show me both
 - show me all of them
 - all of the above
 - all of them
 - lets see them both
-- both of them 
+- both of them
 
-##intent:inform_english
+## intent:inform_english
 - English class
 - English
 - eng
 - english class, please
 - show me english
 - Is there any summer reading?
-- English
 
 ## intent:inform_history
 - Women throughout Religious history
 - history class
-- history 
+- history
 - hist
 - history class please
 - show me history
 
-##intent:inform_spanish
+## intent:inform_spanish
 - spanish class
 - spanish
 - span
 - spanish class please
 - show me spanish
 
-##intent:inform_geometry
+## intent:inform_geometry
 - geometry class
-- geometry 
+- geometry
 - geom
 - geometry class please
 - show me geometry
 
-##intent:inform_syllabus
+## intent:inform_syllabus
 - syllabus
 - show me the syllabus
 - class syllabus
@@ -126,7 +124,7 @@
 - class policies
 - class info
 
-## intent: inform_documents
+## intent:inform_documents
 - download documents
 - I need another copy of a document
 - can you send me a file
@@ -135,7 +133,6 @@
 - documents
 - class files
 - docs please!
-- documents
 - documents please
 - docs, plz
 - docs pls
@@ -145,7 +142,7 @@
 - can you give me another copy of a file
 - I lost a document. Can you give me another copy
 
-##intent:inform_hw
+## intent:inform_hw
 - homework
 - hw
 - homework, please
@@ -153,7 +150,7 @@
 - show me the hw
 - show me the homework
 
-##intent:inform_project
+## intent:inform_project
 - project
 - project, please
 - project, pls
@@ -163,9 +160,8 @@
 - projects
 - projects, please
 - projects, pls
-- projects, plz
 
-##intent:inform_study_guide
+## intent:inform_study_guide
 - study guide
 - show me the study guide
 - unit 2 study guide
@@ -176,7 +172,7 @@
 - sg
 - study guide, please
 
-##intent:inform_readings_sheet
+## intent:inform_readings_sheet
 - readings sheet
 - readings
 - show me the readings
@@ -184,7 +180,7 @@
 - reading spreadsheet
 - readings doc
 
-##intent:inform_vocab_sheet
+## intent:inform_vocab_sheet
 - vocab sheet
 - vocabulary
 - vocab
@@ -200,18 +196,18 @@
 - spanish vocab, please
 - spanish vocab sheet, pls
 
-##intent:inform_due_dates_sheet
+## intent:inform_due_dates_sheet
 - due dates sheet
 - show me the due dates sheet
 - geometry due date sheet
 - due dates spreadsheet
-- geometry class due dates 
+- geometry class due dates
 - geometry due dates spreadsheet
 - due dates sheet, please
 - due dates spreadsheet, plz
 - due dates spreadsheet, pls
 
-##intent:inquire_hw
+## intent:inquire_hw
 - homework due date
 - when do i have to turn hw in
 - when is hw due
@@ -229,7 +225,7 @@
 - Help me with my math homework
 - Wut da hw?
 
-##intent:inquire_spanish_hw
+## intent:inquire_spanish_hw
 - spanish hw
 - did I have any hw in spanish class
 - spanish homework
@@ -244,7 +240,7 @@
 - yo quiero spanish hw
 - yo quiero spanish homework
 
-##intent:inquire_geometry_hw
+## intent:inquire_geometry_hw
 - geometry hw
 - did I have any hw in geometry class
 - geometry homework
@@ -256,7 +252,7 @@
 - whats the hw for geometry class
 - whats the homework for geometry
 
-##intent:inquire_english_hw
+## intent:inquire_english_hw
 - english hw
 - did I have any hw in english class
 - english homework
@@ -281,7 +277,7 @@
 - whats the hw for history class
 - whats the homework for history
 
-##intent:inquire_project
+## intent:inquire_project
 - project due date
 - what day is the project due
 - due date for project
@@ -292,7 +288,7 @@
 - project specs
 - tell me about the project
 
-##intent:inquire_project_spanish
+## intent:inquire_project_spanish
 - spanish project
 - spanish project details
 - tell me about the spanish project
@@ -304,9 +300,8 @@
 - project for spanish class
 - I'd like the project sheet for spanish class, please
 - I'd like the project for spanish, pls
- I'd like the project sheet for spanish, plz
- 
-##intent:inquire_project_geometry
+
+## intent:inquire_project_geometry
 - geometry project
 - geometry project details
 - tell me about the geometry project
@@ -318,9 +313,8 @@
 - project for geometry class
 - I'd like the project sheet for geometry class, please
 - I'd like the project for geometry, pls
- I'd like the project sheet for geometry, plz
- 
- ##intent:inquire_project_english
+
+## intent:inquire_project_english
 - english project
 - english project details
 - tell me about the english project
@@ -332,9 +326,8 @@
 - project for english class
 - I'd like the project sheet for english class, please
 - I'd like the project for english, pls
- I'd like the project sheet for english, plz
- 
- ##intent:inquire_project_history
+
+## intent:inquire_project_history
 - history project
 - history project details
 - tell me about the history project
@@ -346,7 +339,6 @@
 - project for history class
 - I'd like the project sheet for history class, please
 - I'd like the project for history, pls
- I'd like the project sheet for history, plz
 
 ## intent:inquire_missing_assignments
 - Missing work
@@ -367,7 +359,7 @@
 - do I have any missing grades
 - tell me about the assignments im missing
 
-##intent:inquire_missing_assignments_spanish
+## intent:inquire_missing_assignments_spanish
 - am i missing anything in spanish
 - am i missing any assignments in spanish
 - do i have any zeros in spanish
@@ -384,7 +376,7 @@
 - do I have any missing grades in spanish
 - tell me about the assignments im missing in spanish
 
-##intent:inquire_missing_assignments_geometry
+## intent:inquire_missing_assignments_geometry
 - am i missing anything in geometry
 - am i missing any assignments in geometry
 - do i have any zeros in geometry
@@ -401,7 +393,7 @@
 - do I have any missing grades in geometry
 - tell me about the assignments im missing in geometry
 
-##intent:inquire_missing_assignments_english
+## intent:inquire_missing_assignments_english
 - am i missing anything in english
 - am i missing any assignments in english
 - do i have any zeros in english
@@ -418,7 +410,7 @@
 - do I have any missing grades in english
 - tell me about the assignments im missing in english
 
-##intent:inquire_missing_assignments_history
+## intent:inquire_missing_assignments_history
 - am i missing anything in history
 - am i missing any assignments in history
 - do i have any zeros in history
@@ -435,7 +427,6 @@
 - do I have any missing grades in history
 - tell me about the assignments im missing in history
 
-
 ## intent:inquire_assignments
 - what assignments are due soon
 - are there any outstanding assignments
@@ -448,7 +439,7 @@
 - outstanding assignments
 - what haven't i turned in yet
 
-##intent:inquire_assignments_history
+## intent:inquire_assignments_history
 - history assignments
 - history all assignments
 - history show all assignments
@@ -459,14 +450,12 @@
 - due dates history
 - show me my assignments for history class
 - show me assignments for history
-- history assignments
-- history all assignments
 - history outstanding assignments
 - what haven't i turned in yet in history
-- history what assignments 
-- history show assignments 
+- history what assignments
+- history show assignments
 
-##intent:inquire_assignments_english
+## intent:inquire_assignments_english
 - english assignments
 - english all assignments
 - english show all assignments
@@ -477,14 +466,12 @@
 - due dates english
 - show me my assignments for english class
 - show me assignments for english
-- english assignments
-- english all assignments
 - english outstanding assignments
 - what haven't i turned in yet in english
-- english what assignments 
-- english show assignments 
+- english what assignments
+- english show assignments
 
-##intent:inquire_assignments_spanish
+## intent:inquire_assignments_spanish
 - spanish assignments
 - spanish all assignments
 - spanish show all assignments
@@ -495,14 +482,12 @@
 - due dates spanish
 - show me my assignments for spanish class
 - show me assignments for spanish
-- spanish assignments
-- spanish all assignments
 - spanish outstanding assignments
 - what haven't i turned in yet in spanish
-- spanish what assignments 
-- spanish show assignments 
+- spanish what assignments
+- spanish show assignments
 
-##intent:inquire_assignments_geometry
+## intent:inquire_assignments_geometry
 - geometry assignments
 - geometry all assignments
 - geometry show all assignments
@@ -513,12 +498,10 @@
 - due dates geometry
 - show me my assignments for geometry class
 - show me assignments for geometry
-- geometry assignments
-- geometry all assignments
 - geometry outstanding assignments
 - what haven't i turned in yet in geometry
-- geometry what assignments 
-- geometry show assignments 
+- geometry what assignments
+- geometry show assignments
 
 ## intent:inquire_grades
 - what is my grade
@@ -551,7 +534,6 @@
 - Grades
 - What is my gpa?
 - What did I get on my last hw
-- grades
 - What are my grades
 
 ## intent:inquire_grade_spanish
@@ -573,7 +555,7 @@
 - spanish grades pls
 - grade in spanish class plz
 
-##intent:inquire_grade_english
+## intent:inquire_grade_english
 - english grade
 - english GPA
 - english current grade
@@ -590,7 +572,7 @@
 - english grades pls
 - grade in english class plz
 
-##intent:inquire_grade_geometry
+## intent:inquire_grade_geometry
 - geometry grade
 - geometry GPA
 - geometry current grade
@@ -607,7 +589,7 @@
 - geometry grades pls
 - grade in geometry class plz
 
-##intent:inquire_grade_history
+## intent:inquire_grade_history
 - history grade
 - history GPA
 - history current grade
@@ -624,7 +606,7 @@
 - history grades pls
 - grade in history class plz
 
-##intent:inquire_documents_spanish
+## intent:inquire_documents_spanish
 - spanish class documents
 - spanish documents
 - i need another copy of the hw from spanish
@@ -640,7 +622,7 @@
 - can you give me copies of something from spanish class
 - spanish docs
 
-##intent:inquire_documents_history
+## intent:inquire_documents_history
 - history class documents
 - history documents
 - i need another copy of the hw from history
@@ -656,7 +638,7 @@
 - can you give me copies of something from history class
 - history docs
 
-##intent:inquire_documents_geometry
+## intent:inquire_documents_geometry
 - geometry class documents
 - geometry documents
 - i need another copy of the hw from geometry
@@ -672,7 +654,7 @@
 - can you give me copies of something from geometry class
 - geometry docs
 
-##intent:inquire_documents_english
+## intent:inquire_documents_english
 - english class documents
 - english documents
 - i need another copy of the hw from english
@@ -687,7 +669,7 @@
 - please send me another copy of the file from english class
 - can you give me copies of something from english class
 
-##intent:inquire_syllabus_spanish
+## intent:inquire_syllabus_spanish
 - syllabus spanish
 - spanish syllabus
 - show me the syllabus for spanish
@@ -696,7 +678,7 @@
 - spanish class policies
 - spanish class info
 
-##intent:inquire_syllabus_history
+## intent:inquire_syllabus_history
 - syllabus history
 - history syllabus
 - show me the syllabus for history
@@ -705,7 +687,7 @@
 - history class policies
 - history class info
 
-##intent:inquire_syllabus_geometry
+## intent:inquire_syllabus_geometry
 - syllabus geometry
 - geometry syllabus
 - show me the syllabus for geometry
@@ -714,7 +696,7 @@
 - geometry class policies
 - geometry class info
 
-##intent:inquire_syllabus_english
+## intent:inquire_syllabus_english
 - syllabus english
 - english syllabus
 - show me the syllabus for english
@@ -741,7 +723,7 @@
 - what are we doing in spanish class today
 - what are we doing in spanish today
 - are we doing anything cool in spanish this week
-- please show me any scheduled events for spanish 
+- please show me any scheduled events for spanish
 - what does ms ramirez have us doing this week
 - tell me about what spanish class is doing this week
 
@@ -753,7 +735,7 @@
 - what are we doing in history class today
 - what are we doing in history today
 - are we doing anything cool in history this week
-- please show me any scheduled events for history 
+- please show me any scheduled events for history
 - what does ms patillo have us doing this week
 - tell me about what history class is doing this week
 
@@ -765,7 +747,7 @@
 - what are we doing in geometry class today
 - what are we doing in geometry today
 - are we doing anything cool in geometry this week
-- please show me any scheduled events for geometry 
+- please show me any scheduled events for geometry
 - what does mr lipscomb have us doing this week
 - tell me about what geometry class is doing this week
 
@@ -777,12 +759,12 @@
 - what are we doing in english class today
 - what are we doing in english today
 - are we doing anything cool in english this week
-- please show me any scheduled events for english 
+- please show me any scheduled events for english
 - what does mr Kane have us doing this week
 - tell me about what english class is doing this week
 
 ## intent:inform_school
-- school 
+- school
 - school, plz
 - school, please
 - admin
@@ -797,7 +779,7 @@
 - Do we have any half days
 - When is the next day off
 - when is the next holiday
-- show me the all-school calendar 
+- show me the all-school calendar
 
 ## intent:inform_extracurriculars
 - spanish club
@@ -831,7 +813,6 @@
 - when is the next club meeting
 - when is spanish club
 - is spanish club meeting today
-- when is the next club meeting
 - am I in any clubs
 - when is the next spanish club meeting
 - spanish club calendar
@@ -910,7 +891,7 @@
 - what classes do I have
 - give me info on my classes
 - I need information on my classes
-- What is my teacher's email 
+- What is my teacher's email
 - Tell me about my classes
 - I have questions about my classes
 - class info
@@ -923,7 +904,7 @@
 - I have questions about spanish
 - what is ms ramirez's email
 - spanish class contact info
-- I have questions about my spanish class 
+- I have questions about my spanish class
 
 ## intent:inquire_class_info_history
 - what is my history teacher's name
@@ -933,7 +914,7 @@
 - I have questions about history
 - what is ms patillo's email
 - history class contact info
-- I have questions about my history class 
+- I have questions about my history class
 
 ## intent:inquire_class_info_geometry
 - what is my geometry teacher's name
@@ -943,7 +924,7 @@
 - I have questions about geometry
 - what is mr lipscomb's email
 - geometry class contact info
-- I have questions about my geometry class 
+- I have questions about my geometry class
 
 ## intent:inquire_class_info_english
 - what is my english teacher's name
@@ -953,7 +934,7 @@
 - I have questions about english
 - what is mr kane's email
 - english class contact info
-- I have questions about my english class 
+- I have questions about my english class
 
 ## intent:inquire_message_leave
 - I need to send a message
@@ -978,10 +959,5 @@
 - any new messages
 - any new msgs
 
-
-
-
-
-
-
-
+## intent:inform
+- I turned it in today!

@@ -1,7 +1,7 @@
 ## greet
 * greet
   - utter_greet
-  
+
 ## greet + bot challenge
 * greet
   - utter_greet
@@ -24,20 +24,20 @@
 ## inquire spanish hw
 * inquire_spanish_hw
   - utter_hw_spanish
-  
+
 ## inquire english hw
 * inquire_english_hw
   - utter_hw_english_1
   - utter_hw_english_2
-  
+
 ## inquire geometry hw
 * inquire_geometry_hw
   - utter_hw_geometry
-  
+
 ## inquire history hw
 * inquire_history_hw
   - utter_hw_history
-  
+
 ## greet + ask hw + deny projects + deny_anything_else
 * greet
   - utter_greet
@@ -53,7 +53,7 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## greet + bot challenge + ask hw + deny projects + affirm + inquire functionality
 * greet
   - utter_greet
@@ -72,7 +72,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## greet + bot challenge + ask hw + affirm projects 
 * greet
   - utter_greet
@@ -96,7 +96,7 @@
 * affirm_many
   - utter_project_spanish
   - utter_project_history
-  
+
 ## inquire history project
 * inquire_history_project
   - utter_project_history
@@ -108,11 +108,11 @@
 ## inquire english project
 * inquire_english_project
   - utter_project_english
-  
+
 ## inquire geometry project
 * inquire_geometry_project
   - utter_project_geometry
-  
+
 ## inquire project + inform history
 * inquire_project
   - utter_project_choices
@@ -124,13 +124,13 @@
   - utter_project_choices
 * inform_spanish
   - utter_project_spanish
-  
+
 ## inquire project + inform english
 * inquire_project
   - utter_project_choices
 * inform_english
   - utter_project_english
-  
+
 ## inquire project + inform geometry
 * inquire_project
   - utter_project_choices
@@ -143,14 +143,14 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire history syllabus + nothing else
 * inquire_history_syllabus
   - utter_history_document_syllabus
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire english syllabus + nothing else
 * inquire_english_syllabus
   - utter_english_document_syllabus
@@ -174,7 +174,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire history syllabus + nothing else
 * inquire_history_syllabus
   - utter_history_document_syllabus
@@ -196,8 +196,6 @@
 * deny
   - utter_goodbye
 
-
-  
 ## inform syllabus + which syllabus + inform history + give history syllabus
 * inform_syllabus
   - utter_which_class
@@ -214,8 +212,8 @@
 * inform_syllabus
   - utter_which_class
 * inform_geometry
-  - utter_geometry_document_syllabus  
-  
+  - utter_geometry_document_syllabus
+
 ## inform syllabus + which syllabus + inform spanish + give spanish syllabus
 * inform_syllabus
   - utter_which_class
@@ -229,7 +227,7 @@
   - utter_history_document_choices
 * inform_study_guide
   - utter_history_document_study_guide
-  
+
 ## inform documents + class choices + inform class history + history document choices + inform syllabus
 * inform_documents
   - utter_which_class
@@ -237,7 +235,7 @@
   - utter_history_document_choices
 * inform_syllabus
   - utter_history_document_syllabus
-  
+
 ## inform_documents + class choices + inform class history + history document choices + inform hw + anything else + deny + goodbye
 * inform_documents
   - utter_which_class
@@ -259,7 +257,7 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inform_documents + class choices + inform spanish + spanish document choices + inform vocab sheet
 * inform_documents
   - utter_which_class
@@ -267,7 +265,7 @@
   - utter_spanish_document_choices
 * inform_vocab_sheet
   - utter_spanish_document_vocab_sheet
-  
+
 ## inform_documents + class choices + inform spanish + spanish document choices + inform hw
 * inform_documents
   - utter_which_class
@@ -275,7 +273,7 @@
   - utter_spanish_document_choices
 * inform_hw
   - utter_spanish_document_hw
-  
+
 ## inform_documents + class choices + inform class geometry + geometry document choices + inform_syllabus
 * inform_documents
   - utter_which_class
@@ -291,7 +289,7 @@
   - utter_geometry_document_choices
 * inform_due_dates_sheet
   - utter_geometry_document_assignments_due_dates_sheet
-  
+
 ## inform_documents + class choices + inform class english + english document choices + syllabus 
 * inform_documents
   - utter_which_class
@@ -299,7 +297,7 @@
   - utter_english_document_choices
 * inform_syllabus
   - utter_english_document_syllabus
- 
+
 ## inform_documents + class choices + inform class english + english document choices + readings 
 * inform_documents
   - utter_which_class
@@ -313,7 +311,7 @@
   - utter_assignments_class_choice
 * affirm_many
   - utter_assignments_all_outstanding
-  
+
 ## inquire assignments + assignments class choices + spanish + class assignments outstanding + anything else + deny
 * inquire_assignments
   - utter_assignments_class_choice
@@ -322,7 +320,7 @@
   - utter_anything_else
 * deny
   -utter_goodbye
-  
+
 ## inquire assignments + assignments class choices + english + class assignments outstanding + anything else + deny
 * inquire_assignments
   - utter_assignments_class_choice
@@ -331,7 +329,7 @@
   - utter_anything_else
 * deny
   -utter_goodbye
-  
+
 ## inquire assignments + assignments class choices + history + class assignments outstanding + anything else + deny
 * inquire_assignments
   - utter_assignments_class_choice
@@ -340,7 +338,7 @@
   - utter_anything_else
 * deny
   -utter_goodbye
-  
+
 ## inquire assignments + assignments class choices + geometry + class assignments outstanding + anything else + deny
 * inquire_assignments
   - utter_assignments_class_choice
@@ -349,7 +347,7 @@
   - utter_anything_else
 * deny
   -utter_goodbye
-  
+
 ## inquire assignments + assignments class choices + spanish + class assignments outstanding + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -361,7 +359,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments + assignments class choices + english + class assignments outstanding + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -373,7 +371,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments + assignments class choices + history + class assignments outstanding + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -385,7 +383,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments + assignments class choices + geometry + class assignments outstanding + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -397,7 +395,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + affirm many + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +  + assignments missing geometry + affirm + assignments missing geometry note + anything else + deny + goodbye
 * inquire_assignments
   - utter_assignments_class_choice
@@ -413,7 +411,7 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + affirm many + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +  + assignments missing geometry + affirm + assignments missing geometry note + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -448,7 +446,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + affirm +  assignments missing geometry note 3a +   + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -480,7 +478,7 @@
   - utter_assignments_missing_1
 * inform_history
   - utter_assignments_all_good
-  
+
 ## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + deny + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -496,7 +494,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + affirm +  assignments missing geometry note 3a +   + anything else + deny + goodbye
 * inquire_assignments
   - utter_assignments_class_choice
@@ -512,7 +510,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish + note + deny + anything else + affirm + explain functionality
 * inquire_assignments
   - utter_assignments_class_choice
@@ -527,7 +525,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing spanish + note + deny + anything else + deny + goodbye
 * inquire_assignments
   - utter_assignments_class_choice
@@ -542,7 +540,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire missing assignments + assignments missing 1 + both + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
 * inquire_missing_assignments
   - utter_assignments_missing_1
@@ -557,7 +555,6 @@
 * deny
   - utter_goodbye
 
-
 ## inquire missing assignments + assignments missing 1 + both + assignments missing spanish 2 + deny assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
 * inquire_missing_assignments
   - utter_assignments_missing_1
@@ -570,7 +567,7 @@
   -utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + anything else + affirm + explain functionality
 * inquire_missing_assignments
   - utter_assignments_missing_1
@@ -622,7 +619,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire spanish missing assignments + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + anything else + deny + goodbye
 * inquire_missing_assignments_spanish
   - utter_assignments_missing_spanish_2
@@ -670,7 +667,7 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire missing assignments + assignments missing 1 + inform english + assignments all good + anything else + deny + goodbye
 * inquire_missing_assignments
   - utter_assignments_missing_1
@@ -688,7 +685,7 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire spanish assignments + assignments spanish class outstanding + spanish project + view missing assignment spanish  + affirm + missing assignment spanish note 2a  + anything else + affirm + explain functionality
 * inquire_assignments_spanish
   - utter_assignments_spanish_outstanding
@@ -715,7 +712,6 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-
 
 ## inquire geometry assignments + assignments geometry class outstanding + view missing assignment note geometry + affirm + view missing assignment note geometry 3a +  anything else + affirm + explain functionality
 * inquire_assignments_geometry
@@ -760,7 +756,7 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire english functionality + assignments english outstanding + anything else + affirm + explain functionality
 * inquire_assignments_english
   - utter_assignments_english_outstanding
@@ -838,28 +834,28 @@
   - utter_grades_class_more_info_2
 * inform_english
   - utter_grades_english_more_info_4a
-  
+
 ## inquire grades + grades class more info 2 + inform geometry + utter grades english more info 4b
 * inquire_grades
   - utter_grades_overall_1
   - utter_grades_class_more_info_2
 * inform_geometry
   - utter_grades_geometry_more_info_4b
-  
+
 ## inquire grades + grades class more info 2 + inform history + utter grades english more info 4c
 * inquire_grades
   - utter_grades_overall_1
   - utter_grades_class_more_info_2
 * inform_history
   - utter_grades_history_more_info_4c
- 
+
 ## inquire grades + grades class more info 2 + inform spanish + utter grades english more info 4d
 * inquire_grades
   - utter_grades_overall_1
   - utter_grades_class_more_info_2
 * inform_spanish
   - utter_grades_spanish_more_info_4d
-  
+
 ## inquire spanish grade + missing assignment note attached + affirm + view note
 * inquire_grade_spanish
   - utter_grades_spanish_more_info_4d
@@ -878,7 +874,7 @@
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## inquire geometry grade + missing assignment note attached + affirm + view note + anything else + affirm + explain functionality
 * inquire_grade_geometry
   - utter_grades_geometry_more_info_4b
@@ -891,7 +887,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire geometry grade + missing assignment note attached + deny + anything else + affirm + explain functionality
 * inquire_grade_geometry
   - utter_grades_geometry_more_info_4b
@@ -903,7 +899,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire history grade + utter grades class more info 4c + affirm + explain functionality
 * inquire_grade_history
   - utter_grades_history_more_info_4c
@@ -913,7 +909,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire history grade + utter grades class more info 4c + anything else + deny + goodbye
 * inquire_grade_history
   - utter_grades_history_more_info_4c
@@ -930,14 +926,14 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire english grade + utter grades class more info 4a + anything else + deny + goodbye
 * inquire_grade_english
   - utter_grades_english_more_info_4a
   - utter_anything_else
 * deny
   - utter_goodbye
-  
+
 ## say goodbye
 * goodbye
   - utter_goodbye
@@ -949,7 +945,7 @@
   - utter_explain_deadlines_functionality
   - utter_explain_assignments_functionality
   - utter_explain_grades_functionality
-  
+
 ## inquire class info + inform spanish + Deny
 * inquire_class_info
   - utter_which_class
@@ -985,7 +981,7 @@
   - utter_class_info_spanish_overall
 * affirm
   - utter_class_info_details_choices
-  
+
 ## inquire class info + inform english + affirm + class info details choices
 * inquire_class_info
   - utter_which_class
@@ -993,7 +989,7 @@
   - utter_class_info_english_overall
 * affirm
   - utter_class_info_details_choices
-  
+
 ## inquire class info + inform history + affirm + class info details choices
 * inquire_class_info
   - utter_which_class
@@ -1001,7 +997,7 @@
   - utter_class_info_history_overall
 * affirm
   - utter_class_info_details_choices
-  
+
 ## inquire class info + inform geometry + affirm + class info details choices
 * inquire_class_info
   - utter_which_class
@@ -1021,13 +1017,13 @@
   - utter_class_info_english_overall
 * affirm
   - utter_class_info_details_choices
-  
+
 ## inquire class info history + utter class info {} overall + affirm + utter class info details choices
 * inquire_class_info_history
   - utter_class_info_history_overall
 * affirm
   - utter_class_info_details_choices
-  
+
 ## inquire class info geometry + utter class info {} overall + affirm + utter class info details choices
 * inquire_class_info_geometry
   - utter_class_info_geometry_overall
@@ -1056,7 +1052,7 @@
   - utter_message_what_message
 * inform{"message":"this is my message"}
   - utter_message_sent
-  
+
 ## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
 * inquire_message_leave
   - utter_message_which_recipient
@@ -1064,7 +1060,7 @@
   - utter_message_what_message
 * inform{"message":"this is my message"}
   - utter_message_sent
-  
+
 ## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
 * inquire_message_leave
   - utter_message_which_recipient
@@ -1072,7 +1068,7 @@
   - utter_message_what_message
 * inform{"message":"this is my message"}
   - utter_message_sent
-  
+
 ## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
 * inquire_message_leave
   - utter_message_which_recipient
@@ -1080,7 +1076,7 @@
   - utter_message_what_message
 * inform{"message":"this is my message"}
   - utter_message_sent
-  
+
 ## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
 * inquire_message_leave
   - utter_message_which_recipient
@@ -1088,7 +1084,7 @@
   - utter_message_what_message
 * inform{"message":"this is my message"}
   - utter_message_sent
-  
+
 ## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
 * inquire_message_leave
   - utter_message_which_recipient
@@ -1096,7 +1092,7 @@
   - utter_message_what_message
 * inform{"message":"this is my message"}
   - utter_message_sent
-  
+
 ## inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
 * inquire_message_leave
   - utter_message_which_recipient
@@ -1142,7 +1138,7 @@
 * inform{"recipient": "Coach Long"}
   - utter_message_what_message
 * inform{"message": "I turned it in"}
-  - utter_message_sent  
+  - utter_message_sent
 
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform school + utter calendar school 
 * inquire_calendar
@@ -1158,7 +1154,7 @@
 * inquire_calendar_extracurriculars
   - utter_calendar_soccer
   -utter_calendar_spanish_club
-  
+
 ## inquire calendar soccer + utter calendar soccer
 * inquire_calendar_soccer
   - utter_calendar_soccer
@@ -1185,21 +1181,21 @@
   - utter_calendar_more_info_choices
 * inform_geometry
   - utter_calendar_geometry
-  
+
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform history + utter calendar history
 * inquire_calendar
   - utter_calendar_week_overview
   - utter_calendar_more_info_choices
 * inform_history
   - utter_calendar_history
-  
+
 ## inquire calendar + utter calendar week overview + utter calendar more choices + inform english + utter calendar english
 * inquire_calendar
   - utter_calendar_week_overview
   - utter_calendar_more_info_choices
 * inform_english
   - utter_calendar_english
-  
+
 ## inquire calendar + utter calendar week overview + utter calendar more choices  + inform exams + utter exam spanish + utter exam geometry + utter exam history + utter exam english
 * inquire_calendar
   - utter_calendar_week_overview
@@ -1210,23 +1206,23 @@
   - utter_exam_geometry
   - utter_exam_history
   - utter_exam_english
-  
+
 ## inquire calendar spanish + utter calendar spanish
 * inquire_calendar_spanish
   - utter_calendar_spanish
-  
+
 ## inquire calendar geometry + utter calendar geometry
 * inquire_calendar_geometry
   - utter_calendar_geometry
-  
+
 ## inquire calendar history + utter calendar history
 * inquire_calendar_history
   - utter_calendar_history
-  
+
 ## inquire calendar english + utter calendar english 
 * inquire_calendar_english
   - utter_calendar_english
-  
+
 ## inquire exam + utter calendar exams + utter exam spanish + utter exam history + utter exam geometry + utter exam english
 * inquire_exam
   - utter_calendar_exams
@@ -1234,7 +1230,7 @@
   - utter_exam_history
   - utter_exam_geometry
   - utter_exam_english
-  
+
 ## inquire exam spanish  + utter exam spanish
 * inquire_exam_spanish
   - utter_exam_spanish
@@ -1250,3 +1246,8 @@
 ## inquire exam english  + utter exam english
 * inquire_exam_english
   - utter_exam_english
+
+## New Story
+
+* inquire_class_info_spanish
+    - utter_class_info_spanish_overall
