@@ -276,27 +276,27 @@ responses:
   utter_anything_else:
   - text: Can I do anything else for you?
   utter_class_info_english_overall:
-  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email\
-      \ Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there\
+  - text: "Here's some info about your English class:  \n \n * Teacher: Mr. Kane \n  * Email: mkane@aidaschool.com  \
+      \ \n * Extension: #234 \n * Period: 1 \n Room #: 234 \n \n Is there\
       \ something specific I can tell you about your class?"
   utter_class_info_spanish_overall:
-  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email\
-      \ Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there\
+  - text: "Here's some info about your Spanish class:  \n \n * Teacher: Ms. Ramirez \n  * Email: yramirez@aidaschool.com \
+      \n * Extension: #142 \n * Period: 2 \n Room #: 142 \n \n Is there\
       \ something specific I can tell you about your class?"
   utter_class_info_history_overall:
-  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email\
-      \ Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there\
+  - text: "Here's some info about your History class:  \n \n * Teacher: Mrs. Patillo \n  * Email: dpatillo@aidaschool.com \
+      \n * Extension: #311 \n * Period: 3 \n Room #: 311 \n \n Is there\
       \ something specific I can tell you about your class?"
   utter_class_info_geometry_overall:
-  - text: "Here's some info about your {} class:  \n \n * Teacher: {} \n  * Email\
-      \ Address: {}\n * Extension: {} \n * Period: {} \n Room #: {} \n \n Is there\
+  - text: "Here's some info about your Geometry class:  \n \n * Teacher: Mr. Lipscomb \n  * Email: clipscomb@aidaschool.com \
+      \n * Extension: #117 \n * Period: 4 \n Room #: 117 \n \n Is there\
       \ something specific I can tell you about your class?"
   utter_class_info_details_choices:
   - text: "What would you like to know about?  \n \n  * Class Calendar \n * Homework\
       \ \n * Exams \n  * Grades \n * Assignments \n * Documents "
   utter_calendar_week_overview:
-  - text: "Here's what your week looks like: \n \n * Monday:  {} \n * Tuesday:  {}\
-      \ \n * Wednesday:  {} \n * Thursday:  {} \n * Friday:  {} I can also tell you\
+  - text: "Here's what your week looks like: \n \n * Monday:  Overview event 1 \n * Tuesday:  Overview event 2 \
+      \ \n * Wednesday:  overview event 3 \n * Thursday:  overview event 4 \n * Friday:  overview event 5 I can also tell you\
       \ calendar details for specific classes, sports, clubs, etc. Is there something\
       \ specific you'd like to know?"
   utter_calendar_more_info_choices:
@@ -304,38 +304,29 @@ responses:
       \ \n * Soccer \n * Spanish Club \n * English Class \n * Geometry Class \n *\
       \ History Class \n * Spanish Class"
   utter_calendar_school:
-  - text: "Here are the upcoming events on the School Calendar:  \n \n * {} \n * {}\
-      \ \n * {} "
+  - text: "Here are the upcoming events on the School Calendar:  \n \n * Wednesday @ 12:20: Half Day (school ends at 12:20) \n * Friday @ 6pm: Soccer Game (Home, vs VHS) "
   utter_calendar_soccer:
-  - text: "Here are the upcoming events on your Soccer Calendar:  \n \n * {} \n *\
-      \ {} \n * {}"
+  - text: "Here are the upcoming events on your Soccer Calendar:  \n \n * Wednesday @ 1-3pm: Practice Drills \n * Thursday @ 6pm: Team meeting after practice \n * Friday @ 5pm: Set up for game (game starts at 6pm)"
   utter_calendar_spanish_club:
-  - text: "Here are the upcoming events on your Spanish Club Calendar:  \n \n * {}\
-      \ \n * {} \n * {}"
+  - text: "Here are the upcoming events on your Spanish Club Calendar:  \n \n * Wednesday @ 3pm: Monthly Spanish Club Meeting \
+      \ \n * Tuesday @ 8am: Officers meeting (before school)"
   utter_calendar_spanish:
-  - text: "Here are the upcoming events on your Spanish Class Calendar:  \n \n * {}\
-      \ \n * {} \n * {}"
+  - text: "Here are the upcoming events on your Spanish Class Calendar:  \n \n * calendar event 1\
+      \ \n * calendar event 2 \n * calendar event 3"
   utter_calendar_english:
-  - text: "Here are the upcoming events on your English Class Calendar:  \n \n * {}\
-      \ \n * {} \n * {}"
+  - text: "Here are the upcoming events on your English Class Calendar:  \n \n * calendar event 1\ \ \n * calendar event 2 \n * calendar event 3"
   utter_calendar_history:
-  - text: "Here are the upcoming events on your History Class Calendar:  \n \n * {}\
-      \ \n * {} \n * {}"
+  - text: "Here are the upcoming events on your History Class Calendar:  \n \n * calendar event 1\ \ \n * calendar event 2 \n * calendar event 3"
   utter_calendar_geometry:
-  - text: "Here are the upcoming events on your Geometry Class Calendar:  \n \n *\
-      \ {} \n * {} \n * {}"
+  - text: "Here are the upcoming events on your Geometry Class Calendar:  \n \n * calendar event 1\ \ \n * calendar event 2 \n * calendar event 3"
   utter_calendar_exams:
-  - text: "Here are the upcoming exams on your calendar:  \n \n * {} \n * {} \n *\
-      \ {}"
+  - text: "Here are the upcoming exams on your calendar:  \n \n * calendar event 1\ \ \n * calendar event 2 \n * calendar event 3"
   utter_exam_spanish:
-  - text: "Here's the info on your next Spanish Exam:  \n \n * Date \n * Chapters\
-      \ \n * Note From Teacher: "
+  - text: "Here's the info on your next Spanish Exam:  \n \n * Date: Thursday, XX/XX/20 \n * Chapters: 1 & 2 \n * Note From Teacher: Remember to study for this!"
   utter_exam_english:
-  - text: "Here's the info on your next English Exam:  \n \n * Date \n * Chapters\
-      \ \n * Note From Teacher: "
+  - text: "Here's the info on your next English Exam:  \n \n * Date: Thursday, XX/XX/20 \n * Chapters: 1 & 2 \n * Note From Teacher: Remember to study for this!"
   utter_exam_geometry:
-  - text: "Here's the info on your next Geometry Exam:  \n \n * Date \n * Chapters\
-      \ \n * Note From Teacher: "
+  - text: "Here's the info on your next Geometry Exam:  \n \n * Date: Thursday, XX/XX/20 \n * Chapters: 1 & 2 \n * Note From Teacher: Remember to study for this!"
   utter_exam_history:
   - text: Your history class doesn't have any exams scheduled, currently
   utter_message_which_recipient:
