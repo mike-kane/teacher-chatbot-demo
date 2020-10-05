@@ -957,7 +957,4 @@
 - msgs
 - Has anyone left a message for me
 - any new messages
-- any new msgs
-
-## intent:inform
-- I turned it in today!
+- any new msgs 
