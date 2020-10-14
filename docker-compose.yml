@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  aida-action-server:
+    build: .
+    # tag 
+    image: gcr.io/aida-chatbot-student-demo/student-demo:test-action-server-deploy
+    expose:
+      - "5055"
