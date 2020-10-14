@@ -1247,7 +1247,3 @@
 * inquire_exam_english
   - utter_exam_english
 
-## New Story
-
-* inquire_class_info_spanish
-    - utter_class_info_spanish_overall
