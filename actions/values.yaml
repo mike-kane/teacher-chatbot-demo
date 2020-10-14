@@ -1,0 +1,19 @@
+rasax:
+    # initialUser is the user which is created upon the initial start of Rasa X
+    initialUser:
+        # password for the Rasa X user
+        password: "roommateofthemonth!"
+    # Rasa X configuration you did in previous steps
+    # ...
+    tag: "0.31.1"
+# rasa: Settings common for all Rasa containers
+rasa:
+    # Rasa Open Source configuration you did in previous steps
+    # ...
+    # tag refers to the Rasa image tag
+    tag: "1.10.8-full"
+app:
+    # name of the custom action server image to use
+    name: "guidovanrawsome/aida-custom-action-server"
+    # tag refers to the custom action server image tag
+    tag: "v1"
