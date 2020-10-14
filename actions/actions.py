@@ -9,10 +9,10 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
 
-class TestCustomAction(Action):
+class ActionTestCustomAction(Action):
 
     def name(self) -> Text:
-        return "test_custom_action"
+        return "action_test_custom_action"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,

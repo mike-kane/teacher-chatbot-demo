@@ -1247,3 +1247,13 @@
 * inquire_exam_english
   - utter_exam_english
 
+## test custom action server
+* inquire_test_custom_action
+  - action_test_custom_action
+  
+## greet + test custom action
+* greet
+  - utter_greet
+* inquire_test_custom_action
+  - action_test_custom_action
+  

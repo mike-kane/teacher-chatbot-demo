@@ -93,7 +93,7 @@ intents:
 - inquire_geometry_project
 - inquire_calendar_school
 - inquire_calendar_clubs
-
+- inquire_test_custom_action
 entities:
 - message
 - recipient
@@ -383,3 +383,5 @@ responses:
   - text: "*Message 3* \n * From: Coach Long \n * Message: \"I just got a notification\
       \ that you're missing an assignment in spanish class! Please see me before practice\
       \ today, this assignment needs to be turned in before you can participate\""
+actions:
+- action_test_custom_action

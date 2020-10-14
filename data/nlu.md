@@ -958,5 +958,10 @@
 - Has anyone left a message for me
 - any new messages
 - any new msgs 
-
  
+## intent:inquire_test_custom_action
+- custom action
+- test custom action server
+- is the custom action server connected
+- please show me the custom action server is working
+- custom action server check
