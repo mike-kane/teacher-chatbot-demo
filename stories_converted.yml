@@ -1,0 +1,1305 @@
+version: "2.0"
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+- story: greet + bot challenge
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: greet + inquire functionality
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_functionality
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire spanish hw
+  steps:
+  - intent: inquire_spanish_hw
+  - action: utter_hw_spanish
+- story: inquire english hw
+  steps:
+  - intent: inquire_english_hw
+  - action: utter_hw_english_1
+  - action: utter_hw_english_2
+- story: inquire geometry hw
+  steps:
+  - intent: inquire_geometry_hw
+  - action: utter_hw_geometry
+- story: inquire history hw
+  steps:
+  - intent: inquire_history_hw
+  - action: utter_hw_history
+- story: greet + ask hw + deny projects + deny_anything_else
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_hw
+  - action: utter_hw_1
+  - action: utter_hw_spanish
+  - action: utter_hw_geometry
+  - action: utter_hw_english_1
+  - action: utter_hw_english_2
+  - action: utter_hw_history
+  - action: utter_hw_hear_projects
+  - intent: deny
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: greet + bot challenge + ask hw + deny projects + affirm + inquire functionality
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_hw
+  - action: utter_hw_1
+  - action: utter_hw_spanish
+  - action: utter_hw_geometry
+  - action: utter_hw_english_1
+  - action: utter_hw_english_2
+  - action: utter_hw_history
+  - action: utter_hw_hear_projects
+  - intent: deny
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: greet + bot challenge + ask hw + affirm projects
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_hw
+  - action: utter_hw_1
+  - action: utter_hw_spanish
+  - action: utter_hw_geometry
+  - action: utter_hw_english_1
+  - action: utter_hw_english_2
+  - action: utter_hw_history
+  - action: utter_hw_hear_projects
+  - intent: affirm
+  - action: utter_project_choices
+  - intent: affirm_many
+  - action: utter_project_history
+  - action: utter_project_spanish
+- story: inquire project
+  steps:
+  - intent: inquire_project
+  - action: utter_project_choices
+  - intent: affirm_many
+  - action: utter_project_spanish
+  - action: utter_project_history
+- story: inquire history project
+  steps:
+  - intent: inquire_history_project
+  - action: utter_project_history
+- story: inquire spanish project
+  steps:
+  - intent: inquire_spanish_project
+  - action: utter_project_spanish
+- story: inquire english project
+  steps:
+  - intent: inquire_english_project
+  - action: utter_project_english
+- story: inquire geometry project
+  steps:
+  - intent: inquire_geometry_project
+  - action: utter_project_geometry
+- story: inquire project + inform history
+  steps:
+  - intent: inquire_project
+  - action: utter_project_choices
+  - intent: inform_history
+  - action: utter_project_history
+- story: inquire project + inform spanish
+  steps:
+  - intent: inquire_project
+  - action: utter_project_choices
+  - intent: inform_spanish
+  - action: utter_project_spanish
+- story: inquire project + inform english
+  steps:
+  - intent: inquire_project
+  - action: utter_project_choices
+  - intent: inform_english
+  - action: utter_project_english
+- story: inquire project + inform geometry
+  steps:
+  - intent: inquire_project
+  - action: utter_project_choices
+  - intent: inform_geometry
+  - action: utter_project_geometry
+- story: inquire spanish syllabus + nothing else
+  steps:
+  - intent: inquire_spanish_syllabus
+  - action: utter_spanish_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire history syllabus + nothing else
+  steps:
+  - intent: inquire_history_syllabus
+  - action: utter_history_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire english syllabus + nothing else
+  steps:
+  - intent: inquire_english_syllabus
+  - action: utter_english_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire geometry syllabus + nothing else
+  steps:
+  - intent: inquire_geometry_syllabus
+  - action: utter_geometry_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire spanish syllabus + affirm anything else
+  steps:
+  - intent: inquire_spanish_syllabus
+  - action: utter_spanish_document_syllabus
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire history syllabus + nothing else
+  steps:
+  - intent: inquire_history_syllabus
+  - action: utter_history_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire english syllabus + nothing else
+  steps:
+  - intent: inquire_english_syllabus
+  - action: utter_english_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire geometry syllabus + nothing else
+  steps:
+  - intent: inquire_geometry_syllabus
+  - action: utter_geometry_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inform syllabus + which syllabus + inform history + give history syllabus
+  steps:
+  - intent: inform_syllabus
+  - action: utter_which_class
+  - intent: inform_history
+  - action: utter_history_document_syllabus
+- story: inform syllabus + which syllabus + inform english + give english syllabus
+  steps:
+  - intent: inform_syllabus
+  - action: utter_which_class
+  - intent: inform_english
+  - action: utter_english_document_syllabus
+- story: inform syllabus + which syllabus + inform geometry + give geometry syllabus
+  steps:
+  - intent: inform_syllabus
+  - action: utter_which_class
+  - intent: inform_geometry
+  - action: utter_geometry_document_syllabus
+- story: inform syllabus + which syllabus + inform spanish + give spanish syllabus
+  steps:
+  - intent: inform_syllabus
+  - action: utter_which_class
+  - intent: inform_spanish
+  - action: utter_spanish_document_syllabus
+- story: inform documents + class choices + inform class history + history document choices + inform study guide
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_history
+  - action: utter_history_document_choices
+  - intent: inform_study_guide
+  - action: utter_history_document_study_guide
+- story: inform documents + class choices + inform class history + history document choices + inform syllabus
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_history
+  - action: utter_history_document_choices
+  - intent: inform_syllabus
+  - action: utter_history_document_syllabus
+- story: inform_documents + class choices + inform class history + history document choices + inform hw + anything else + deny + goodbye
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_history
+  - action: utter_history_document_choices
+  - intent: inform_hw
+  - action: utter_history_document_hw
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inform_documents + class choices + inform class spanish + spanish document choices + inform + anything else + deny + goodbye
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_history
+  - action: utter_spanish_document_choices
+  - intent: inform_syllabus
+  - action: utter_spanish_document_syllabus
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inform_documents + class choices + inform spanish + spanish document choices + inform vocab sheet
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_spanish
+  - action: utter_spanish_document_choices
+  - intent: inform_vocab_sheet
+  - action: utter_spanish_document_vocab_sheet
+- story: inform_documents + class choices + inform spanish + spanish document choices + inform hw
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_spanish
+  - action: utter_spanish_document_choices
+  - intent: inform_hw
+  - action: utter_spanish_document_hw
+- story: inform_documents + class choices + inform class geometry + geometry document choices + inform_syllabus
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_geometry
+  - action: utter_geometry_document_choices
+  - intent: inform_syllabus
+  - action: utter_geometry_document_syllabus
+- story: inform_documents + class choices + inform class geometry + geometry document choices + due dates sheet
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_geometry
+  - action: utter_geometry_document_choices
+  - intent: inform_due_dates_sheet
+  - action: utter_geometry_document_assignments_due_dates_sheet
+- story: inform_documents + class choices + inform class english + english document choices + syllabus
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_english
+  - action: utter_english_document_choices
+  - intent: inform_syllabus
+  - action: utter_english_document_syllabus
+- story: inform_documents + class choices + inform class english + english document choices + readings
+  steps:
+  - intent: inform_documents
+  - action: utter_which_class
+  - intent: inform_english
+  - action: utter_english_document_choices
+  - intent: inform_readings_sheet
+  - action: utter_english_document_readings_sheet
+- story: inquire assignments +  assignments class choices + affirm many + assignments all outstanding
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: affirm_many
+  - action: utter_assignments_all_outstanding
+- story: inquire assignments + assignments class choices + spanish + class assignments outstanding + anything else + deny
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_spanish
+  - action: utter_assignments_spanish_outstanding
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire assignments + assignments class choices + english + class assignments outstanding + anything else + deny
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_english
+  - action: utter_assignments_english_outstanding
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire assignments + assignments class choices + history + class assignments outstanding + anything else + deny
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_history
+  - action: utter_assignments_history_outstanding
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire assignments + assignments class choices + geometry + class assignments outstanding + anything else + deny
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_geometry
+  - action: utter_assignments_geometry_outstanding
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire assignments + assignments class choices + spanish + class assignments outstanding + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_spanish
+  - action: utter_assignments_spanish_outstanding
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments + assignments class choices + english + class assignments outstanding + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_english
+  - action: utter_assignments_english_outstanding
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments + assignments class choices + history + class assignments outstanding + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_history
+  - action: utter_assignments_history_outstanding
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments + assignments class choices + geometry + class assignments outstanding + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inform_geometry
+  - action: utter_assignments_geometry_outstanding
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + affirm many + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +  + assignments missing geometry + affirm + assignments missing geometry note + anything else + deny + goodbye
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: affirm_many
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + affirm many + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +  + assignments missing geometry + affirm + assignments missing geometry note + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: affirm_many
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish + note + affirm +  assignments missing spanish note 2a +   + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_spanish
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + affirm +  assignments missing geometry note 3a +   + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments + assignments class choices + inquire missing assignments + assignments missing 1 + inform english + assignments all good
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_english
+  - action: utter_assignments_all_good
+- story: inquire assignments + assignments class choices + inquire missing assignments + assignments missing 1 + inform history + assignments all good
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_history
+  - action: utter_assignments_all_good
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + deny + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry + note + affirm +  assignments missing geometry note 3a +   + anything else + deny + goodbye
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish + note + deny + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: deny
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire assignments  + assignments class choices + inquire missing assignments + assignments missing 1 + inform geometry + assignments missing spanish + note + deny + anything else + deny + goodbye
+  steps:
+  - intent: inquire_assignments
+  - action: utter_assignments_class_choice
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: deny
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire missing assignments + assignments missing 1 + both + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: affirm_many
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire missing assignments + assignments missing 1 + both + assignments missing spanish 2 + deny assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: affirm_many
+  - action: utter_assignments_missing_spanish_2
+  - intent: deny
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire missing assignments + assignments missing 1 + inform spanish + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_spanish
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire missing assignments + assignments missing 1 + inform geometry + assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire missing assignments + assignments missing 1 + inform english + assignments all good + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_english
+  - action: utter_assignments_all_good
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire missing assignments + assignments missing 1 + inform history + assignments all good + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_history
+  - action: utter_assignments_all_good
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire spanish missing assignments + assignments missing spanish 2 + affirm + assignments missing spanish note 2a + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments_spanish
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire spanish missing assignments + assignments missing spanish 2 + deny + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments_spanish
+  - action: utter_assignments_missing_spanish_2
+  - intent: deny
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire geometry missing assignments +  assignments missing geometry 3 + affirm + assignments missing geometry note 3a + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire geometry missing assignments + assignments missing geometry 3 + deny + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments_geometry
+  - action: utter_assignments_missing_geometry_3
+  - intent: deny
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire english missing assignments + all good + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments_english
+  - action: utter_assignments_all_good
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire history missing assignments + all good + anything else  + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments_history
+  - action: utter_assignments_all_good
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire missing assignments + assignments missing 1 + inform english + assignments all good + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_english
+  - action: utter_assignments_all_good
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire missing assignments + assignments missing 1 + inform history + assignments all good + anything else + deny + goodbye
+  steps:
+  - intent: inquire_missing_assignments
+  - action: utter_assignments_missing_1
+  - intent: inform_history
+  - action: utter_assignments_all_good
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire spanish assignments + assignments spanish class outstanding + spanish project + view missing assignment spanish  + affirm + missing assignment spanish note 2a  + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments_spanish
+  - action: utter_assignments_spanish_outstanding
+  - action: utter_project_spanish
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire spanish assignments + assignments spanish class outstanding + spanish project +  view missing assignment spanish note + deny +  anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments_spanish
+  - action: utter_assignments_spanish_outstanding
+  - action: utter_project_spanish
+  - action: utter_assignments_missing_spanish_2
+  - intent: deny
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire geometry assignments + assignments geometry class outstanding + view missing assignment note geometry + affirm + view missing assignment note geometry 3a +  anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments_geometry
+  - action: utter_assignments_geometry_outstanding
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire geometry assignments + assignments geometry class outstanding + view missing assignment note + deny +  anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments_geometry
+  - action: utter_assignments_geometry_outstanding
+  - action: utter_assignments_missing_geometry_3
+  - intent: deny
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire history functionality + assignments history outstanding + history project +  anything else + affirm + explain_functionality
+  steps:
+  - intent: inquire_assignments_history
+  - action: utter_assignments_history_outstanding
+  - action: utter_project_history
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire history functionality + assignments history  outstanding + history project + anything else + deny + goodbye
+  steps:
+  - intent: inquire_assignments_history
+  - action: utter_assignments_history_outstanding
+  - action: utter_project_history
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire english functionality + assignments english outstanding + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_assignments_english
+  - action: utter_assignments_english_outstanding
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire english functionality + assignments english outstanding + anything else + deny + goodbye
+  steps:
+  - intent: inquire_assignments_english
+  - action: utter_assignments_english_outstanding
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform english + utter_grades_english_more_info_4a + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: affirm
+  - action: utter_grades_class_more_info_which_class_3
+  - intent: inform_english
+  - action: utter_grades_english_more_info_4a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform geometry + utter_grades_geometry_more_info_4b + anything else + deny + goodbye
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: affirm
+  - action: utter_grades_class_more_info_which_class_3
+  - intent: inform_geometry
+  - action: utter_grades_geometry_more_info_4b
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform history + utter_grades_history_more_info_4c + anything else + deny + goodbye
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: affirm
+  - action: utter_grades_class_more_info_which_class_3
+  - intent: inform_history
+  - action: utter_grades_history_more_info_4c
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire grades + utter grades class more info 2 + affirm + grades class more info which class 3 + inform spanish + utter_grades_spanish_more_info_4d + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: affirm
+  - action: utter_grades_class_more_info_which_class_3
+  - intent: inform_spanish
+  - action: utter_grades_spanish_more_info_4d
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire grades + grades class more info 2 + inform english + utter grades english more info 4a
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: inform_english
+  - action: utter_grades_english_more_info_4a
+- story: inquire grades + grades class more info 2 + inform geometry + utter grades english more info 4b
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: inform_geometry
+  - action: utter_grades_geometry_more_info_4b
+- story: inquire grades + grades class more info 2 + inform history + utter grades english more info 4c
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: inform_history
+  - action: utter_grades_history_more_info_4c
+- story: inquire grades + grades class more info 2 + inform spanish + utter grades english more info 4d
+  steps:
+  - intent: inquire_grades
+  - action: utter_grades_overall_1
+  - action: utter_grades_class_more_info_2
+  - intent: inform_spanish
+  - action: utter_grades_spanish_more_info_4d
+- story: inquire spanish grade + missing assignment note attached + affirm + view note
+  steps:
+  - intent: inquire_grade_spanish
+  - action: utter_grades_spanish_more_info_4d
+  - action: utter_assignments_missing_spanish_2
+  - intent: affirm
+  - action: utter_assignments_missing_spanish_note_2a
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire spanish grade + missing assignment note attached + deny + anything else + deny + goodbye
+  steps:
+  - intent: inquire_grade_spanish
+  - action: utter_grades_spanish_more_info_4d
+  - action: utter_assignments_missing_spanish_2
+  - intent: deny
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire geometry grade + missing assignment note attached + affirm + view note + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_grade_geometry
+  - action: utter_grades_geometry_more_info_4b
+  - action: utter_assignments_missing_geometry_3
+  - intent: affirm
+  - action: utter_assignments_missing_geometry_note_3a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire geometry grade + missing assignment note attached + deny + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_grade_geometry
+  - action: utter_grades_geometry_more_info_4b
+  - action: utter_assignments_missing_geometry_3
+  - intent: deny
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire history grade + utter grades class more info 4c + affirm + explain functionality
+  steps:
+  - intent: inquire_grade_history
+  - action: utter_grades_history_more_info_4c
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire history grade + utter grades class more info 4c + anything else + deny + goodbye
+  steps:
+  - intent: inquire_grade_history
+  - action: utter_grades_history_more_info_4c
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: inquire english grade + utter grades class more info 4a + anything else + affirm + explain functionality
+  steps:
+  - intent: inquire_grade_english
+  - action: utter_grades_english_more_info_4a
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire english grade + utter grades class more info 4a + anything else + deny + goodbye
+  steps:
+  - intent: inquire_grade_english
+  - action: utter_grades_english_more_info_4a
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+  - action: utter_explain_deadlines_functionality
+  - action: utter_explain_assignments_functionality
+  - action: utter_explain_grades_functionality
+- story: inquire class info + inform spanish + Deny
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_spanish
+  - action: utter_class_info_spanish_overall
+  - intent: deny
+- story: inquire class info + inform english + Deny + goodbye
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_english
+  - action: utter_class_info_english_overall
+  - intent: deny
+- story: inquire class info + inform history + Deny + goodbye
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_history
+  - action: utter_class_info_history_overall
+  - intent: deny
+- story: inquire class info + inform geometry + Deny + goodbye
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_geometry
+  - action: utter_class_info_geometry_overall
+  - intent: deny
+- story: inquire class info + inform spanish + affirm + class info details choices
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_spanish
+  - action: utter_class_info_spanish_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire class info + inform english + affirm + class info details choices
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_english
+  - action: utter_class_info_english_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire class info + inform history + affirm + class info details choices
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_history
+  - action: utter_class_info_history_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire class info + inform geometry + affirm + class info details choices
+  steps:
+  - intent: inquire_class_info
+  - action: utter_which_class
+  - intent: inform_geometry
+  - action: utter_class_info_geometry_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire class info spanish + utter class info spanish overall + affirm + utter class info details choices
+  steps:
+  - intent: inquire_class_info_spanish
+  - action: utter_class_info_spanish_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire class info english + utter class info {} overall + affirm + utter class info details choices
+  steps:
+  - intent: inquire_class_info_english
+  - action: utter_class_info_english_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire class info history + utter class info {} overall + affirm + utter class info details choices
+  steps:
+  - intent: inquire_class_info_history
+  - action: utter_class_info_history_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire class info geometry + utter class info {} overall + affirm + utter class info details choices
+  steps:
+  - intent: inquire_class_info_geometry
+  - action: utter_class_info_geometry_overall
+  - intent: affirm
+  - action: utter_class_info_details_choices
+- story: inquire message read
+  steps:
+  - intent: inquire_message_read
+  - action: utter_message_check_messages_summary
+  - action: utter_message_check_message_1
+  - action: utter_message_check_message_2
+  - action: utter_message_check_message_3
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Coach Long
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Spanish Club Members
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Spanish Club Officers
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Mr. Kane
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Ms. Ramirez
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Mr. Lipscomb
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Mrs. Patillo
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message leave + utter_message which recipient + inform {set slot recipient} + utter message what message + inform message {set slot message} + utter message sent
+  steps:
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Administration
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: this is my message
+  - action: utter_message_sent
+- story: inquire message read + inquire message leave + which recipient + inform_ soccer +
+  steps:
+  - intent: inquire_message_read
+  - action: utter_message_check_messages_summary
+  - action: utter_message_check_message_1
+  - action: utter_message_check_message_2
+  - action: utter_message_check_message_3
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Spanish Club Members
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: I turned it in
+  - action: utter_message_sent
+- story: inquire message read + inquire message leave + which recipient + inform geometry +
+  steps:
+  - intent: inquire_message_read
+  - action: utter_message_check_messages_summary
+  - action: utter_message_check_message_1
+  - action: utter_message_check_message_2
+  - action: utter_message_check_message_3
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Mr. Lipscomb
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: I turned it in
+  - action: utter_message_sent
+- story: inquire message read + inquire message leave + which recipient + inform_ soccer +
+  steps:
+  - intent: inquire_message_read
+  - action: utter_message_check_messages_summary
+  - action: utter_message_check_message_1
+  - action: utter_message_check_message_2
+  - action: utter_message_check_message_3
+  - intent: inquire_message_leave
+  - action: utter_message_which_recipient
+  - intent: inform
+    entities:
+    - recipient: Coach Long
+  - action: utter_message_what_message
+  - intent: inform
+    entities:
+    - message: I turned it in
+  - action: utter_message_sent
+- story: inquire calendar + utter calendar week overview + utter calendar more choices + inform school + utter calendar school
+  steps:
+  - intent: inquire_calendar
+  - action: utter_calendar_week_overview
+  - action: utter_calendar_more_info_choices
+  - intent: inquire_calendar_school
+  - action: utter_calendar_school
+- story: inquire calendar + utter calendar week overview + utter calendar more choices + inform extracurriculars + utter calendar soccer + utter calendar spanish club
+  steps:
+  - intent: inquire_calendar
+  - action: utter_calendar_week_overview
+  - action: utter_calendar_more_info_choices
+  - intent: inquire_calendar_extracurriculars
+  - action: utter_calendar_soccer
+  - action: utter_calendar_spanish_club
+- story: inquire calendar soccer + utter calendar soccer
+  steps:
+  - intent: inquire_calendar_soccer
+  - action: utter_calendar_soccer
+- story: inquire calendar clubs + utter calendar clubs
+  steps:
+  - intent: inquire_calendar_clubs
+  - action: utter_calendar_spanish_club
+- story: inquire calendar extracurriculars + utter calendar soccer  + utter calendar spanish club
+  steps:
+  - intent: inquire_calendar_extracurriculars
+  - action: utter_calendar_soccer
+  - action: utter_calendar_spanish_club
+- story: inquire calendar + utter calendar week overview + utter calendar more choices + inform spanish + utter calendar spanish
+  steps:
+  - intent: inquire_calendar
+  - action: utter_calendar_week_overview
+  - action: utter_calendar_more_info_choices
+  - intent: inform_spanish
+  - action: utter_calendar_spanish
+- story: inquire calendar + utter calendar week overview + utter calendar more choices + inform geometry + utter calendar geometry
+  steps:
+  - intent: inquire_calendar
+  - action: utter_calendar_week_overview
+  - action: utter_calendar_more_info_choices
+  - intent: inform_geometry
+  - action: utter_calendar_geometry
+- story: inquire calendar + utter calendar week overview + utter calendar more choices + inform history + utter calendar history
+  steps:
+  - intent: inquire_calendar
+  - action: utter_calendar_week_overview
+  - action: utter_calendar_more_info_choices
+  - intent: inform_history
+  - action: utter_calendar_history
+- story: inquire calendar + utter calendar week overview + utter calendar more choices + inform english + utter calendar english
+  steps:
+  - intent: inquire_calendar
+  - action: utter_calendar_week_overview
+  - action: utter_calendar_more_info_choices
+  - intent: inform_english
+  - action: utter_calendar_english
+- story: inquire calendar + utter calendar week overview + utter calendar more choices  + inform exams + utter exam spanish + utter exam geometry + utter exam history + utter exam english
+  steps:
+  - intent: inquire_calendar
+  - action: utter_calendar_week_overview
+  - action: utter_calendar_more_info_choices
+  - intent: inquire_exam
+  - action: utter_calendar_exams
+  - action: utter_exam_spanish
+  - action: utter_exam_geometry
+  - action: utter_exam_history
+  - action: utter_exam_english
+- story: inquire calendar spanish + utter calendar spanish
+  steps:
+  - intent: inquire_calendar_spanish
+  - action: utter_calendar_spanish
+- story: inquire calendar geometry + utter calendar geometry
+  steps:
+  - intent: inquire_calendar_geometry
+  - action: utter_calendar_geometry
+- story: inquire calendar history + utter calendar history
+  steps:
+  - intent: inquire_calendar_history
+  - action: utter_calendar_history
+- story: inquire calendar english + utter calendar english
+  steps:
+  - intent: inquire_calendar_english
+  - action: utter_calendar_english
+- story: inquire exam + utter calendar exams + utter exam spanish + utter exam history + utter exam geometry + utter exam english
+  steps:
+  - intent: inquire_exam
+  - action: utter_calendar_exams
+  - action: utter_exam_spanish
+  - action: utter_exam_history
+  - action: utter_exam_geometry
+  - action: utter_exam_english
+- story: inquire exam spanish  + utter exam spanish
+  steps:
+  - intent: inquire_exam_spanish
+  - action: utter_exam_spanish
+- story: inquire exam history  + utter exam history
+  steps:
+  - intent: inquire_exam_history
+  - action: utter_exam_history
+- story: inquire exam geometry  + utter exam geometry
+  steps:
+  - intent: inquire_exam_geometry
+  - action: utter_exam_geometry
+- story: inquire exam english  + utter exam english
+  steps:
+  - intent: inquire_exam_english
+  - action: utter_exam_english
+- story: test custom action server
+  steps:
+  - intent: inquire_test_custom_action
+  - action: action_test_custom_action
+- story: greet + test custom action
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_test_custom_action
+  - action: action_test_custom_action
